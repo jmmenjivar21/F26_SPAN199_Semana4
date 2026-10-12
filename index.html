@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish for Healthcare · Capítulo 4 · El cuerpo y el dolor: partes del cuerpo, doler, preguntar sobre el dolor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   SPANISH FOR HEALTHCARE WORKERS · CAPÍTULO 4
+   Talking about the Body
+   el cuerpo · doler · describir el dolor · repaso
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --navy:#1B2E4F; --navy-light:#2E4977;
+  --terracotta:#C45D3A; --terracotta-light:#E0876A;
+  --gold:#D4A24C; --gold-light:#EBC373;
+  --sage:#6E8C5F; --sage-light:#9CB590;
+  --cream:#FBF7EE; --cream-dark:#F0E9D8;
+  --text:#1a1a1a; --text-light:#444; --text-hint:#666;
+  --soft-shadow:0 4px 16px rgba(27,46,79,0.08);
+  --tile-shadow:0 2px 8px rgba(27,46,79,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Source Sans 3','Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.55;font-size:16px;min-height:100vh;}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;z-index:9999;text-decoration:none;}
+.skip-link:focus{left:8px;top:8px;}
+*:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px;}
+.app{max-width:1200px;margin:0 auto;padding:0 20px 64px;position:relative;}
+.app::before{content:'4';position:fixed;top:18px;right:24px;z-index:0;font-family:'Playfair Display',serif;font-size:9rem;font-weight:800;color:var(--navy);opacity:0.04;pointer-events:none;line-height:1;}
+
+.chap-head{margin-top:36px;padding:32px 36px;border-radius:18px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.chap-head::after{content:'';position:absolute;right:-40px;bottom:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(212,162,76,0.25),transparent 70%);}
+.header-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;background:rgba(212,162,76,0.22);color:var(--gold-light);padding:5px 12px;border-radius:20px;margin-bottom:10px;}
+.header-title{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;line-height:1.15;margin-bottom:6px;}
+.header-subtitle{display:block;font-family:'Space Mono',monospace;font-size:0.85rem;letter-spacing:0.1em;color:var(--gold-light);text-transform:uppercase;}
+
+.prog-bar{height:8px;background:var(--cream-dark);border-radius:4px;margin:6px 0 0;overflow:hidden;}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--terracotta),var(--gold));width:0%;transition:width 0.6s ease-out;}
+.completion-wrap{margin:22px 0 20px;}
+.completion-top{display:flex;align-items:center;gap:12px;}
+.completion-label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-hint);}
+.completion-score{margin-left:auto;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;color:var(--sage);background:rgba(110,140,95,0.14);padding:4px 12px;border-radius:20px;white-space:nowrap;}
+.completion-pct{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--terracotta);margin-left:14px;}
+.completion-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.legend-pill{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;background:var(--cream-dark);color:var(--text-light);border:1px solid transparent;cursor:pointer;transition:all 0.2s;}
+.legend-pill:hover{background:#e6d9c2;color:var(--navy);}
+.legend-pill.done{background:rgba(110,140,95,0.18);border-color:var(--sage);color:var(--sage);}
+
+.submit-bar{background:var(--cream-dark);border-radius:12px;padding:14px 18px;margin-bottom:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.submit-bar label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-light);}
+#studentName{flex:1;min-width:210px;border:2px solid #e2d5bd;border-radius:8px;background:#fff;padding:9px 13px;font-family:inherit;font-size:0.94rem;color:var(--navy);}
+#studentName:focus{outline:none;border-color:var(--gold);}
+.btn-download{background:var(--terracotta);color:#fff;border:none;border-radius:8px;padding:10px 20px;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;transition:background 0.2s,transform 0.2s;}
+.btn-download:hover{background:var(--terracotta-light);transform:translateY(-1px);}
+.submit-hint{width:100%;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);letter-spacing:0.04em;}
+
+.quiz-item{background:var(--cream);border-radius:12px;padding:16px 18px;margin-bottom:14px;border-left:4px solid var(--sage);}
+.quiz-item.correct{background:#eef6ea;border-left-color:var(--sage);}
+.quiz-item.wrong{background:#fbeceb;border-left-color:var(--terracotta);}
+.quiz-q{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:2px;}
+.quiz-q .qnum{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);font-weight:400;margin-right:6px;}
+.quiz-gloss{font-size:0.8rem;color:var(--text-hint);font-style:italic;margin-bottom:12px;}
+.quiz-options{display:grid;gap:7px;}
+.quiz-opt{display:flex;align-items:flex-start;gap:10px;background:#fff;border:2px solid var(--cream-dark);border-radius:9px;padding:9px 13px;font-size:0.88rem;cursor:pointer;text-align:left;font-family:inherit;color:var(--text);width:100%;transition:border-color 0.2s,background 0.2s;}
+.quiz-opt:hover{border-color:var(--sage-light);background:#fbfaf6;}
+.quiz-opt.selected{border-color:var(--navy);background:#f3f5fa;}
+.quiz-opt.is-correct{border-color:var(--sage);background:#eef6ea;}
+.quiz-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;}
+.quiz-opt .letter{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);flex-shrink:0;margin-top:2px;}
+.quiz-explain{font-size:0.84rem;margin-top:10px;padding:10px 13px;border-radius:8px;background:#fff;border-left:3px solid var(--gold);display:none;}
+.quiz-explain.show{display:block;}
+
+.task-input{width:100%;border:none;border-bottom:2px solid var(--cream-dark);background:transparent;font-family:inherit;font-size:0.92rem;color:var(--navy);padding:5px 6px;}
+.task-input:focus{outline:none;border-bottom-color:var(--gold);}
+.task-fb{font-family:'Space Mono',monospace;font-size:0.66rem;margin-top:6px;display:none;}
+.task-fb.show{display:block;}
+.task-fb.ok{color:var(--sage);}
+.task-fb.ng{color:var(--terracotta);}
+
+.nav{display:flex;gap:4px;flex-wrap:wrap;background:#fff;padding:6px;border-radius:14px;box-shadow:var(--tile-shadow);margin-bottom:24px;}
+.tab{flex:1 1 auto;min-width:110px;padding:12px 14px;background:transparent;border:none;border-radius:10px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:600;color:var(--text-light);cursor:pointer;transition:all 0.18s ease;min-height:44px;}
+.tab:hover{background:var(--cream-dark);color:var(--navy);}
+.tab.active{background:var(--navy);color:#fff;box-shadow:0 2px 6px rgba(27,46,79,0.25);}
+
+.sec{display:none;animation:fadein 0.3s ease;}
+.sec.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.sec-title{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.sec-sub{font-family:'Space Mono',monospace;font-size:0.78rem;letter-spacing:0.12em;color:var(--terracotta);text-transform:uppercase;margin-bottom:22px;}
+
+.week-hero{background:#fff;padding:26px 30px;border-radius:14px;margin-bottom:24px;box-shadow:var(--tile-shadow);border-left:5px solid var(--terracotta);}
+.week-hero h1{font-family:'Playfair Display',serif;font-size:1.55rem;color:var(--navy);margin-bottom:8px;}
+.week-hero p{font-size:0.97rem;color:var(--text-light);margin-bottom:14px;}
+.topic-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{display:inline-block;padding:5px 11px;background:var(--cream-dark);color:var(--navy);border-radius:14px;font-size:0.78rem;font-weight:600;font-family:'Space Mono',monospace;letter-spacing:0.02em;}
+
+.ch-intro{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.ch-intro::before{content:'';position:absolute;left:-30px;top:-30px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(196,93,58,0.25),transparent 70%);}
+.ch-intro .label{position:relative;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.ch-intro h2{position:relative;font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:10px;color:#fff;}
+.ch-intro p{position:relative;font-size:0.95rem;line-height:1.6;color:rgba(255,255,255,0.95);}
+
+.card{background:#fff;padding:22px 26px;border-radius:14px;margin-bottom:18px;box-shadow:var(--tile-shadow);}
+.card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.card-title .pill{font-family:'Space Mono',monospace;font-size:0.65rem;background:var(--gold);color:#fff;padding:3px 9px;border-radius:12px;letter-spacing:0.1em;}
+
+.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.obj{background:var(--cream);padding:14px 16px;border-radius:10px;border-left:3px solid var(--sage);display:flex;gap:11px;align-items:flex-start;}
+.obj-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;}
+.obj-text{font-size:0.93rem;color:var(--text);line-height:1.45;}
+
+.vocab-hint{text-align:center;font-size:0.82rem;color:var(--text-hint);font-style:italic;margin-bottom:14px;}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:11px;}
+.vocab-card{perspective:1000px;height:118px;cursor:pointer;}
+.vocab-card-inner{position:relative;width:100%;height:100%;transition:transform 0.6s;transform-style:preserve-3d;}
+.vocab-card.flipped .vocab-card-inner{transform:rotateY(180deg);}
+.vocab-front,.vocab-back{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;border-radius:11px;text-align:center;box-shadow:var(--tile-shadow);}
+.vocab-front{background:#fff;border:2px solid var(--cream-dark);font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:0.98rem;}
+.vocab-front small{display:block;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);font-weight:400;margin-top:5px;letter-spacing:0.04em;}
+.vocab-back{background:linear-gradient(135deg,var(--terracotta),var(--terracotta-light));color:#fff;transform:rotateY(180deg);font-size:0.92rem;font-weight:600;}
+.vocab-ex{display:block;font-size:0.74rem;font-weight:400;font-style:italic;margin-top:6px;opacity:0.92;padding:0 18px;}
+.vocab-sound{position:absolute;top:6px;right:9px;font-size:0.75rem;opacity:0.55;}
+.vocab-replay{position:absolute;bottom:6px;right:8px;background:rgba(255,255,255,0.22);border:none;border-radius:50%;width:30px;height:30px;font-size:0.85rem;cursor:pointer;color:#fff;line-height:30px;padding:0;}
+.vocab-replay:hover,.vocab-replay:focus-visible{background:rgba(255,255,255,0.4);outline:2px solid #fff;}
+.vocab-card:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:12px;}
+.vocab-card.conn-card .vocab-front{border-color:var(--sage-light);color:var(--sage);}
+.vocab-card.conn-card .vocab-back{background:linear-gradient(135deg,var(--sage),#5A7350);}
+
+.gbox{background:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--tile-shadow);border-top:4px solid var(--terracotta);}
+.gbox.alt{border-top-color:var(--sage);}
+.gbox.alt2{border-top-color:var(--gold);}
+.gbox h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.gbox h3 .num{font-family:'Space Mono',monospace;font-size:0.7rem;background:var(--terracotta);color:#fff;padding:4px 10px;border-radius:11px;letter-spacing:0.1em;}
+.gbox.alt h3 .num{background:var(--sage);}
+.gbox.alt2 h3 .num{background:var(--gold);color:var(--navy);}
+.gbox .sub{font-size:0.9rem;color:var(--text-hint);margin-bottom:16px;font-style:italic;}
+
+.conj-table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(27,46,79,0.05);}
+.conj-table th,.conj-table td{padding:9px 13px;text-align:left;font-size:0.9rem;border-bottom:1px solid var(--cream-dark);}
+.conj-table th{background:var(--navy);color:#fff;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:700;}
+.conj-table td .pn{color:var(--text-hint);}
+.conj-table td .fm{color:var(--terracotta);font-weight:700;font-style:italic;}
+.conj-table .accent{color:var(--terracotta);font-weight:700;}
+.conj-table tr:last-child td{border-bottom:none;}
+
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0;}
+@media(max-width:740px){.three-col{grid-template-columns:1fr;}}
+.col-card{background:var(--cream);padding:16px 18px;border-radius:10px;border-top:4px solid var(--terracotta);}
+.col-card.gd{border-top-color:var(--gold);}
+.col-card.sg{border-top-color:var(--sage);}
+.col-card h4{font-family:'Playfair Display',serif;font-size:1.12rem;color:var(--navy);margin-bottom:4px;}
+.col-card .meaning{font-family:'Space Mono',monospace;font-size:0.68rem;color:var(--text-hint);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;}
+.col-card .ex{font-style:italic;font-size:0.85rem;color:var(--text);background:#fff;padding:7px 10px;border-radius:6px;margin-bottom:5px;}
+.col-card .ex strong{color:var(--terracotta);font-style:normal;}
+.col-card.gd .ex strong{color:#A07A2D;}
+.col-card.sg .ex strong{color:var(--sage);}
+
+.ex-box{background:var(--cream);border-left:3px solid var(--sage);padding:12px 16px;border-radius:8px;margin:14px 0;}
+.ex-box p{font-size:0.9rem;color:var(--text);margin:4px 0;}
+.ex-box em{color:var(--text-hint);font-style:italic;}
+.ojo{background:#FFF6F0;border-left:4px solid var(--terracotta);padding:14px 18px;border-radius:8px;margin:16px 0;}
+.ojo-title{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--terracotta);letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:6px;}
+.ojo p{font-size:0.92rem;color:var(--text);line-height:1.55;}
+.ojo em{color:var(--terracotta);font-style:italic;font-weight:600;}
+
+/* Alphabet grid */
+.alpha-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0;}
+.alpha-cell{background:var(--cream);border-radius:8px;padding:9px 6px;text-align:center;border:1px solid var(--cream-dark);}
+.alpha-cell .ltr{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--navy);display:block;}
+.alpha-cell .nm{font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--terracotta);letter-spacing:0.04em;display:block;margin-top:2px;}
+.vowel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0;}
+.vowel-cell{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;border-radius:10px;padding:14px 10px;text-align:center;}
+.vowel-cell .v{font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;display:block;line-height:1;}
+.vowel-cell .s{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--gold-light);display:block;margin-top:6px;letter-spacing:0.06em;}
+.vowel-cell .w{font-size:0.8rem;color:rgba(255,255,255,0.9);display:block;margin-top:4px;font-style:italic;}
+
+.ex-item{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--cream-dark);font-size:0.97rem;}
+.ex-item:last-of-type{border-bottom:none;}
+.ex-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--cream);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.78rem;font-weight:700;}
+.ex-text{flex:1;line-height:1.9;color:var(--text);}
+.ex-hint{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--terracotta);margin-left:4px;}
+.blk{display:inline-block;width:120px;padding:6px 10px;border:2px solid var(--cream-dark);border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:0.95rem;color:var(--navy);background:#fff;outline:none;transition:border-color 0.15s;}
+.blk.wide{width:170px;}
+.blk:focus{border-color:var(--gold);}
+.blk.ok{border-color:var(--sage);background:#F4F8F0;color:#3F5C32;}
+.blk.ng{border-color:var(--terracotta);background:#FFF0EA;color:#8E3A1F;}
+
+.chk-btn,.rst-btn,.toggle-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-family:'Source Sans 3',sans-serif;font-size:0.92rem;font-weight:700;cursor:pointer;transition:all 0.15s;min-height:42px;margin-top:14px;}
+.chk-btn{background:var(--navy);color:#fff;}
+.chk-btn:hover{background:var(--navy-light);}
+.rst-btn{background:#fff;color:var(--navy);border:2px solid var(--cream-dark);margin-left:6px;}
+.rst-btn:hover{border-color:var(--navy);}
+.toggle-btn{background:var(--gold);color:var(--navy);margin-left:6px;}
+.toggle-btn:hover{background:var(--gold-light);}
+.res-msg{margin-top:12px;font-size:0.93rem;font-weight:700;min-height:22px;}
+.res-msg.ok{color:#3F5C32;}
+.res-msg.ng{color:#8E3A1F;}
+
+.word-bank{background:var(--cream);padding:11px 14px;border-radius:8px;margin-bottom:14px;font-size:0.88rem;}
+.word-bank-label{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);letter-spacing:0.1em;text-transform:uppercase;display:block;margin-bottom:4px;}
+.word-bank-words span{display:inline-block;background:#fff;padding:3px 9px;border-radius:11px;margin:2px 3px;font-size:0.84rem;border:1px solid var(--cream-dark);color:var(--navy);font-weight:700;}
+
+/* Matching */
+.match-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.match-col-label{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-hint);margin-bottom:6px;}
+.mi{padding:11px 13px;border:2px solid var(--cream-dark);border-radius:9px;cursor:pointer;font-size:0.86rem;background:#fff;transition:all 0.12s;line-height:1.4;margin-bottom:7px;color:var(--text);}
+.mi:hover{border-color:var(--sage-light);}
+.mi.sel{border-color:var(--navy);background:#f3f5fa;color:var(--navy);}
+.mi.done{border-color:var(--sage);background:#eef6ea;color:#3F5C32;pointer-events:none;opacity:0.75;}
+.mi.bad{border-color:var(--terracotta);background:#fbeceb;}
+
+/* Conjugation game */
+.game-wrap{background:var(--cream);border-radius:14px;padding:22px;text-align:center;}
+.game-scorebar{display:flex;justify-content:center;gap:22px;margin-bottom:16px;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);}
+.game-scorebar b{display:block;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--terracotta);margin-top:2px;}
+.game-prompt{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);margin:10px 0 4px;}
+.game-sub{font-size:0.85rem;color:var(--text-hint);font-style:italic;margin-bottom:18px;}
+.game-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin:0 auto;}
+@media(max-width:520px){.game-opts{grid-template-columns:1fr;}}
+.game-opt{background:#fff;border:2px solid var(--cream-dark);border-radius:10px;padding:14px 10px;font-family:'Source Sans 3',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);cursor:pointer;transition:all 0.12s;}
+.game-opt:hover{border-color:var(--sage-light);transform:translateY(-2px);}
+.game-opt.is-correct{border-color:var(--sage);background:#eef6ea;color:#3F5C32;}
+.game-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;color:#8E3A1F;}
+.game-feedback{min-height:22px;margin-top:14px;font-weight:700;font-size:0.95rem;}
+.game-feedback.ok{color:#3F5C32;}
+.game-feedback.ng{color:#8E3A1F;}
+.game-done{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);}
+
+.cult-card{background:linear-gradient(135deg,var(--sage) 0%,#5A7350 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:18px;box-shadow:var(--soft-shadow);}
+.cult-card .label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.cult-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px;color:#fff;}
+.cult-card p{font-size:0.95rem;line-height:1.65;color:rgba(255,255,255,0.95);}
+.cult-card .fact-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.cult-card .fact-pills span{background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;}
+
+.footer{margin-top:36px;padding:20px;text-align:center;font-family:'Space Mono',monospace;font-size:0.76rem;color:var(--text-hint);letter-spacing:0.05em;}
+
+@media(max-width:600px){
+  .chap-head{padding:24px 22px;}
+  .header-title{font-size:1.7rem;}
+  .gbox,.card,.cult-card,.ch-intro{padding:18px 20px;}
+  .three-col{grid-template-columns:1fr;}
+  .ex-item{flex-wrap:wrap;}
+}
+
+/* ── Shared additions (dialogue, pod, formula) ── */
+.dlg{background:var(--cream);border-radius:10px;padding:14px 18px;margin:14px 0;}
+.dlg p{font-size:0.93rem;margin:6px 0;line-height:1.5;}
+.dlg .who{display:inline-block;min-width:92px;font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--terracotta);font-weight:700;}
+.dlg .who.pt{color:var(--sage);}
+.dlg .en{display:block;font-size:0.8rem;color:var(--text-hint);font-style:italic;margin-left:96px;}
+.pod-hero{background:linear-gradient(135deg,#9B2C2C 0%,#B84444 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.pod-hero::after{content:'🩹';position:absolute;right:22px;bottom:6px;font-size:4.5rem;opacity:0.22;}
+.pod-hero .label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:6px;}
+.pod-hero h2{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:10px;color:#fff;}
+.pod-hero p{font-size:0.95rem;line-height:1.6;color:rgba(255,255,255,0.95);max-width:760px;}
+.vocab-card.pod-card .vocab-front{border-color:#E3B2B2;color:#9B2C2C;}
+.vocab-card.pod-card .vocab-back{background:linear-gradient(135deg,#9B2C2C,#B84444);}
+.tab.pod-tab{color:#9B2C2C;}
+.tab.pod-tab.active{background:#9B2C2C;color:#fff;}
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0;font-size:0.95rem;}
+.formula span{background:var(--cream);border:1px solid var(--cream-dark);border-radius:8px;padding:6px 11px;font-weight:600;color:var(--navy);}
+.formula span.arrow{background:none;border:none;color:var(--terracotta);font-weight:700;padding:0 2px;}
+.formula span.res{background:var(--terracotta);border-color:var(--terracotta);color:#fff;}
+.tts-note{font-size:0.78rem;color:var(--text-hint);text-align:center;margin-top:-6px;margin-bottom:14px;}
+/* ── Capítulo 3 additions ── */
+.play-btn{display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#fff;border:none;border-radius:16px;padding:5px 12px;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.04em;cursor:pointer;margin-right:8px;vertical-align:middle;}
+.play-btn:hover{background:var(--navy-light);}
+.alpha-cell.num-cell{cursor:pointer;border:1px solid var(--cream-dark);font-family:inherit;transition:all 0.12s;}
+.alpha-cell.num-cell:hover{border-color:var(--gold);background:#fff;transform:translateY(-1px);}
+.alpha-cell.num-cell .nm{text-transform:none;}
+/* ── Capítulo 4 additions ── */
+.tab.rev-tab{color:var(--sage);}
+.tab.rev-tab.active{background:var(--sage);color:#fff;}
+.body-wrap{display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:20px;align-items:start;margin:10px 0;}
+@media(max-width:700px){.body-wrap{grid-template-columns:1fr;}}
+.body-fig{background:var(--cream);border-radius:12px;padding:10px;}
+.body-fig svg{width:100%;height:auto;display:block;}
+.body-fig .bp{fill:#E9DCC4;stroke:#CDB896;stroke-width:2;}
+.body-fig .hs{cursor:pointer;}
+.body-fig .hs circle{fill:var(--terracotta);stroke:#fff;stroke-width:2;transition:fill 0.15s;}
+.body-fig .hs:hover circle,.body-fig .hs:focus circle,.body-fig .hs.on circle{fill:var(--navy);}
+.body-fig .hs text{fill:#fff;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;pointer-events:none;}
+.body-fig .hs:focus{outline:none;}
+.body-label{background:var(--navy);color:#fff;border-radius:12px;padding:16px 18px;margin-bottom:12px;display:flex;flex-direction:column;gap:2px;}
+.body-label .bl-num{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--gold-light);letter-spacing:0.1em;}
+.body-label .bl-word{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;}
+.body-label .bl-en{font-size:0.9rem;color:rgba(255,255,255,0.8);font-style:italic;}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="app">
+
+  <div class="chap-head">
+    <span class="header-badge">SPSCC · SPANISH FOR HEALTHCARE</span>
+    <span class="header-title">Capítulo 4 · El cuerpo y el dolor</span>
+    <span class="header-subtitle">Talking about the Body</span>
+  </div>
+
+  <div class="completion-wrap">
+    <div class="completion-top">
+      <span class="completion-label">Mi progreso · My progress</span>
+      <span class="completion-score" id="completionScore">★ 0% correcto</span>
+      <span class="completion-pct" id="completionPct">0%</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" id="pf" style="width:0%"></div></div>
+    <div class="completion-legend" id="completionLegend"></div>
+  </div>
+
+  <div class="submit-bar">
+    <label for="studentName">Nombre / Name</label>
+    <input id="studentName" type="text" placeholder="Type your full name here" autocomplete="name">
+    <button class="btn-download" onclick="downloadReport()">⬇ Download Report</button>
+    <span class="submit-hint">Enter your name, work through every tab, then download your chapter report to turn in.</span>
+  </div>
+
+  <nav class="nav" aria-label="Chapter sections">
+    <button class="tab active" onclick="switchTab('ov',this)">Inicio</button>
+    <button class="tab" onclick="switchTab('vo',this)">Vocabulario</button>
+    <button class="tab" onclick="switchTab('gr',this)">Gramática</button>
+    <button class="tab" onclick="switchTab('ej',this)">Ejercicios</button>
+    <button class="tab" onclick="switchTab('ju',this)">Juegos</button>
+    <button class="tab pod-tab" onclick="switchTab('pod',this)">★ Pod · Trauma</button>
+    <button class="tab rev-tab" onclick="switchTab('rev',this)">Repaso · Midterm</button>
+  </nav>
+
+  <div id="main-content"></div>
+
+  <!-- ═══ INICIO ═══ -->
+  <section class="sec active" id="sec-ov">
+    <h2 class="sec-title">Capítulo 4 · El cuerpo y el dolor</h2>
+    <p class="sec-sub">partes del cuerpo · el verbo doler · describir el dolor · ¿dónde? ¿desde cuándo? · repaso</p>
+
+    <div class="ch-intro">
+      <div class="label">¡Bienvenidos! · Where does it hurt?</div>
+      <h2>The question behind almost every visit</h2>
+      <p>Most patients come in because something hurts. In this chapter you'll learn <strong>more than 20 parts of the body</strong>, the verb <strong>doler</strong> (<em>me duele, le duele</em>), and how to ask the questions that follow: <em>¿Dónde le duele? ¿Desde cuándo? ¿Cómo es el dolor? Del 1 al 10, ¿cuánto le duele?</em> You'll also learn to describe where the pain is and what it feels like. On Thursday we review Capítulos 1 to 4 to prepare for the midterm; the <strong>Repaso</strong> tab has everything you need.</p>
+    </div>
+
+    <div class="week-hero">
+      <h1>What this chapter covers</h1>
+      <p>Five building blocks, this week's specialty pod, and a midterm review. Everything is graded automatically, so you can see exactly which pieces still need work before class.</p>
+      <div class="topic-chips">
+        <span class="chip">20+ partes del cuerpo</span>
+        <span class="chip">doler: me duele · me duelen</span>
+        <span class="chip">me · te · le · nos · les</span>
+        <span class="chip">ubicación y tipo de dolor</span>
+        <span class="chip">¿dónde? ¿desde cuándo?</span>
+        <span class="chip">★ pod: trauma</span>
+        <span class="chip">repaso: caps. 1 a 4</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Objetivos · By the end of this chapter you can <span class="pill">CAP 4</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text">Name <strong>more than 20 parts of the body</strong>: <em>la cabeza, el pecho, el estómago, el brazo, la pierna, la espalda…</em></span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text">Use <strong>doler</strong> correctly: <em>me duele la cabeza</em> / <em>me duelen los pies</em>.</span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text">Choose the right <strong>indirect object pronoun</strong>: <em>me, te, le, nos, les</em>.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text"><strong>Describe a symptom</strong>: where it is (<em>en el lado derecho</em>) and what it's like (<em>agudo, sordo, punzante</em>).</span></div>
+        <div class="obj"><span class="obj-num">5</span><span class="obj-text"><strong>Ask about pain</strong>: <em>¿Dónde le duele? ¿Desde cuándo? Del 1 al 10, ¿cuánto le duele?</em></span></div>
+        <div class="obj"><span class="obj-num">★</span><span class="obj-text"><strong>Pod de especialidad:</strong> talk to a trauma patient after an accident.</span></div>
+      </div>
+    </div>
+
+    <div class="cult-card">
+      <div class="label">Nota cultural · Words for the body</div>
+      <h3>¿El estómago, la panza o la barriga?</h3>
+      <p>Patients don't always use textbook words. For the stomach area you will hear <em>el estómago</em>, but also <em>la barriga</em> and, especially in Mexico and Central America, <em>la panza</em>. In Chile, people say <em>la guata</em>. Many patients also point instead of naming the part, so a very useful command is <em>Muéstreme dónde le duele</em> (Show me where it hurts). And remember: in Spanish you say <em>me duele <strong>la</strong> cabeza</em>, not <em>mi cabeza</em>; the pronoun already tells us whose head it is.</p>
+      <div class="fact-pills">
+        <span>el estómago · la barriga · la panza</span>
+        <span>la guata (Chile)</span>
+        <span>Muéstreme dónde le duele.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VOCABULARIO ═══ -->
+  <section class="sec" id="sec-vo">
+    <h2 class="sec-title">Vocabulario · Capítulo 4</h2>
+    <p class="sec-sub">la cabeza y el tronco · los brazos y las piernas · el dolor</p>
+
+    <p class="vocab-hint">Tap any card to flip it: you'll see the translation and an example, and hear both 🔊. Learn every noun with its article (<em>el, la, los, las</em>). Say it out loud before flipping, and point to the part on your own body.</p>
+    <p class="tts-note">Audio uses your device's Spanish voice. If you hear nothing, check your volume or try another browser.</p>
+
+    <div class="card">
+      <div class="card-title">La cabeza y el tronco <span class="pill">12 CARDS</span></div>
+      <div class="vocab-grid" id="fcHead"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Los brazos y las piernas <span class="pill">12 CARDS</span></div>
+      <div class="vocab-grid" id="fcLimbs"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Frases sobre el dolor <span class="pill">12 CARDS</span></div>
+      <div class="vocab-grid" id="fcPain"></div>
+    </div>
+  </section>
+
+  <!-- ═══ GRAMÁTICA ═══ -->
+  <section class="sec" id="sec-gr">
+    <h2 class="sec-title">Gramática · Capítulo 4</h2>
+    <p class="sec-sub">how to talk about pain, and how to ask about it</p>
+
+    <!-- G1 body map -->
+    <div class="gbox">
+      <h3><span class="num">G1</span>El mapa del cuerpo</h3>
+      <p class="sub">Tap a number to see and hear the word. The figure faces you, so the patient's right side is on your left.</p>
+      <div class="body-wrap">
+        <div class="body-fig" id="bodyMap"></div>
+        <div class="body-side">
+          <div class="body-label" id="bodyLabel"><span class="bl-num">?</span><span class="bl-word">Toque un número</span><span class="bl-en">Tap a number</span></div>
+          <div class="ex-box">
+            <p><strong>Not on the figure:</strong> <em>la espalda</em> (back), <em>los oídos</em> (inner ears), <em>la garganta</em> (throat), <em>el corazón</em> (heart), <em>los pulmones</em> (lungs).</p>
+            <p><strong>Lados:</strong> <em>el brazo derecho</em> (right arm) · <em>la pierna izquierda</em> (left leg).</p>
+          </div>
+        </div>
+      </div>
+      <div class="ojo"><div class="ojo-title">¡OJO! · el artículo, no el posesivo</div><p>With body parts, Spanish uses the article: <em>Me duele <strong>la</strong> rodilla</em>, <em>Levante <strong>el</strong> brazo</em>. English says "my knee" and "your arm," but in Spanish <em>mi rodilla</em> sounds odd in these sentences. Watch the gender too: <em>la mano</em> is feminine even though it ends in -o.</p></div>
+    </div>
+
+    <!-- G2 doler -->
+    <div class="gbox alt">
+      <h3><span class="num">G2</span>El verbo DOLER · funciona como gustar</h3>
+      <p class="sub">The body part is the subject; the person who hurts is the indirect object. Only two verb forms: <strong>duele</strong> and <strong>duelen</strong>.</p>
+      <div class="three-col">
+        <div class="col-card">
+          <h4>DUELE</h4>
+          <div class="meaning">one thing hurts (singular)</div>
+          <div class="ex">Me <strong>duele</strong> la cabeza.</div>
+          <div class="ex">Le <strong>duele</strong> el estómago.</div>
+          <div class="ex">¿Le <strong>duele</strong> la espalda?</div>
+        </div>
+        <div class="col-card gd">
+          <h4>DUELEN</h4>
+          <div class="meaning">two or more things hurt (plural)</div>
+          <div class="ex">Me <strong>duelen</strong> los pies.</div>
+          <div class="ex">Le <strong>duelen</strong> las rodillas.</div>
+          <div class="ex">¿Le <strong>duelen</strong> los oídos?</div>
+        </div>
+        <div class="col-card sg">
+          <h4>LA CLAVE</h4>
+          <div class="meaning">look at the body part</div>
+          <div class="ex">The verb agrees with the <strong>body part</strong>, not with the person.</div>
+          <div class="ex">o → <strong>ue</strong>: d<strong>ue</strong>le, d<strong>ue</strong>len</div>
+        </div>
+      </div>
+      <div class="formula"><span>me</span><span class="arrow">+</span><span>duele</span><span class="arrow">+</span><span>la cabeza</span><span class="arrow">=</span><span class="res">My head hurts. (lit. "the head hurts me")</span></div>
+      <div class="ojo"><div class="ojo-title">¡OJO! · dos maneras</div><p><em>Me duele la cabeza</em> and <em>Tengo dolor de cabeza</em> both mean "I have a headache." With <em>tener</em>, use <em>dolor de</em> + body part with no article: <em>Tiene dolor de <strong>espalda</strong></em>. Never mix them: <s>me duele dolor</s>.</p></div>
+    </div>
+
+    <!-- G3 pronouns -->
+    <div class="gbox alt2">
+      <h3><span class="num">G3</span>Los pronombres de objeto indirecto</h3>
+      <p class="sub">The pronoun tells us who feels the pain. Add <em>a</em> + person to make it clear or to emphasize.</p>
+      <table class="conj-table">
+        <thead><tr><th>(Para aclarar)</th><th>Pronombre</th><th>Singular</th><th>Plural</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pn">(a mí)</span></td><td class="fm">me</td><td>Me duele la cabeza.</td><td>Me duelen los pies.</td></tr>
+          <tr><td><span class="pn">(a ti)</span></td><td class="fm">te</td><td>¿Te duele la garganta?</td><td>¿Te duelen los oídos?</td></tr>
+          <tr><td><span class="pn">(a usted · a él · a ella)</span></td><td class="fm">le</td><td>¿Le duele la espalda?</td><td>Le duelen las rodillas.</td></tr>
+          <tr><td><span class="pn">(a nosotros)</span></td><td class="fm">nos</td><td>Nos duele el estómago.</td><td>Nos duelen los ojos.</td></tr>
+          <tr><td><span class="pn">(a ustedes · a ellos)</span></td><td class="fm">les</td><td>Les duele la cabeza.</td><td>Les duelen los brazos.</td></tr>
+        </tbody>
+      </table>
+      <div class="ex-box">
+        <p><strong>With a third person, add «a» for clarity:</strong> <em><strong>A mi papá</strong> le duele el pecho.</em> · <em><strong>A la niña</strong> le duelen los oídos.</em></p>
+        <p><strong>With a patient (usted):</strong> <em>¿Le duele aquí?</em> or, for emphasis, <em>¿<strong>A usted</strong> le duele aquí?</em></p>
+      </div>
+      <div class="ojo"><div class="ojo-title">CONEXIÓN · Capítulo 1</div><p>Just like <em>usted es</em> uses the él/ella form, a patient you call <em>usted</em> takes <strong>le</strong>: <em>¿<strong>Le</strong> duele?</em> With a child (tú), use <strong>te</strong>: <em>¿<strong>Te</strong> duele la pancita?</em></p></div>
+    </div>
+
+    <!-- G4 describing -->
+    <div class="gbox">
+      <h3><span class="num">G4</span>Describir el síntoma: ¿dónde y cómo?</h3>
+      <p class="sub">Two details make a pain description useful: its exact location and what it feels like.</p>
+      <div class="three-col">
+        <div class="col-card">
+          <h4>¿DÓNDE?</h4>
+          <div class="meaning">location</div>
+          <div class="ex">en el lado <strong>derecho</strong> / <strong>izquierdo</strong></div>
+          <div class="ex"><strong>arriba</strong> / <strong>abajo</strong> · aquí</div>
+          <div class="ex">Me duele <strong>aquí</strong>, en el lado derecho.</div>
+        </div>
+        <div class="col-card gd">
+          <h4>¿CÓMO ES?</h4>
+          <div class="meaning">type of pain</div>
+          <div class="ex"><strong>agudo</strong> (sharp) · <strong>sordo</strong> (dull)</div>
+          <div class="ex"><strong>punzante</strong> (stabbing) · con <strong>ardor</strong> (burning)</div>
+          <div class="ex">como una <strong>presión</strong> (pressure)</div>
+        </div>
+        <div class="col-card sg">
+          <h4>¿CUÁNTO?</h4>
+          <div class="meaning">intensity · numbers from Cap. 3</div>
+          <div class="ex">Del 1 al 10, es un <strong>ocho</strong>.</div>
+          <div class="ex"><strong>leve</strong> · <strong>moderado</strong> · <strong>fuerte</strong></div>
+          <div class="ex">Es <strong>constante</strong> / <strong>va y viene</strong>.</div>
+        </div>
+      </div>
+      <div class="formula"><span>Me duele el estómago</span><span class="arrow">+</span><span>en el lado derecho</span><span class="arrow">+</span><span>es un dolor agudo</span><span class="arrow">→</span><span class="res">Del 1 al 10, es un siete.</span></div>
+      <div class="ojo"><div class="ojo-title">EN LA CLÍNICA</div><p>Adjectives agree with <em>dolor</em> (masculine): <em>un dolor agud<strong>o</strong></em>, <em>un dolor fuerte</em>. Chest pain described as <em>una presión</em> or <em>un peso</em> (a weight) is important to report right away.</p></div>
+    </div>
+
+    <!-- G5 asking -->
+    <div class="gbox alt">
+      <h3><span class="num">G5</span>Preguntar sobre el dolor</h3>
+      <p class="sub">Five questions, in this order, give you most of what the doctor needs.</p>
+      <table class="conj-table">
+        <thead><tr><th>Pregunta</th><th>English</th><th>Respuesta modelo</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">¿Dónde le duele?</td><td>Where does it hurt?</td><td>Me duele la espalda, abajo.</td></tr>
+          <tr><td class="accent">¿Desde cuándo?</td><td>Since when?</td><td>Desde ayer. / Desde hace tres días.</td></tr>
+          <tr><td class="accent">¿Cómo es el dolor?</td><td>What is the pain like?</td><td>Es agudo. / Es como una presión.</td></tr>
+          <tr><td class="accent">Del 1 al 10, ¿cuánto le duele?</td><td>From 1 to 10, how much does it hurt?</td><td>Un ocho.</td></tr>
+          <tr><td class="accent">¿Le duele cuando camina?</td><td>Does it hurt when you walk?</td><td>Sí, me duele mucho.</td></tr>
+        </tbody>
+      </table>
+      <div class="ex-box">
+        <p><strong>¿Desde cuándo?</strong> <em>desde ayer</em> (since yesterday) · <em>desde esta mañana</em> (since this morning) · <em>desde el lunes</em> (since Monday) · <em>desde hace dos días</em> (for two days).</p>
+      </div>
+      <div class="ojo"><div class="ojo-title">CONEXIÓN · Capítulo 2</div><p>Use a polite command when words aren't enough: <em>Muéstreme dónde le duele</em> (Show me where it hurts). <em>Señale con un dedo</em> (Point with one finger).</p></div>
+    </div>
+  </section>
+
+  <!-- ═══ EJERCICIOS ═══ -->
+  <section class="sec" id="sec-ej">
+    <h2 class="sec-title">Ejercicios · Práctica</h2>
+    <p class="sec-sub">Ejercicio 1 · 2 · 3 · 4 · 5 · 6 · 7</p>
+
+    <!-- Ej 1 body parts -->
+    <div class="card">
+      <div class="card-title">Ejercicio 1 · Las partes del cuerpo <span class="pill">VOCABULARIO</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Write the Spanish word. The article is optional here; accents are optional too.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Me duele <input class="blk" id="e1_1" data-answer="la cabeza|cabeza" placeholder="___">. <span class="ex-hint">(head)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Tengo dolor de <input class="blk" id="e1_2" data-answer="pecho|el pecho" placeholder="___">. <span class="ex-hint">(chest)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Le duele <input class="blk" id="e1_3" data-answer="el estómago|estómago|la barriga|la panza" placeholder="___">. <span class="ex-hint">(stomach)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Me duele <input class="blk" id="e1_4" data-answer="la espalda|espalda" placeholder="___">, abajo. <span class="ex-hint">(back)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Le duele <input class="blk" id="e1_5" data-answer="la rodilla|rodilla" placeholder="___"> izquierda. <span class="ex-hint">(knee)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Tiene el <input class="blk" id="e1_6" data-answer="tobillo|el tobillo" placeholder="___"> hinchado. <span class="ex-hint">(ankle)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">Me duele <input class="blk" id="e1_7" data-answer="la garganta|garganta" placeholder="___"> cuando como. <span class="ex-hint">(throat)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">Levante <input class="blk" id="e1_8" data-answer="el brazo|brazo" placeholder="___">, por favor. <span class="ex-hint">(arm)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Reset</button>
+      <div class="res-msg" id="rs1" aria-live="polite"></div>
+    </div>
+
+    <!-- Ej 2 duele / duelen -->
+    <div class="card">
+      <div class="card-title">Ejercicio 2 · ¿Duele o duelen? <span class="pill">DOLER</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Look at the body part: one thing or more than one?</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Me <input class="blk" id="e2_1" data-answer="duele" placeholder="___"> la cabeza.</span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Me <input class="blk" id="e2_2" data-answer="duelen" placeholder="___"> los pies.</span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">¿Le <input class="blk" id="e2_3" data-answer="duelen" placeholder="___"> las rodillas, señora?</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">A mi hijo le <input class="blk" id="e2_4" data-answer="duele" placeholder="___"> el oído.</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Nos <input class="blk" id="e2_5" data-answer="duelen" placeholder="___"> los ojos.</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">¿Te <input class="blk" id="e2_6" data-answer="duele" placeholder="___"> la mano, mi amor?</span></div>
+      <button class="chk-btn" onclick="checkBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6','rs2')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6','rs2')">Reset</button>
+      <div class="res-msg" id="rs2" aria-live="polite"></div>
+    </div>
+
+    <!-- Ej 3 pronouns -->
+    <div class="card">
+      <div class="card-title">Ejercicio 3 · ¿A quién le duele? <span class="pill">ME · TE · LE · NOS · LES</span></div>
+      <div class="word-bank"><span class="word-bank-label">Word Bank</span><span class="word-bank-words"><span>me</span><span>te</span><span>le</span><span>nos</span><span>les</span></span></div>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">A mí <input class="blk" id="e3_1" data-answer="me" placeholder="___"> duele la cabeza.</span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">¿A usted <input class="blk" id="e3_2" data-answer="le" placeholder="___"> duele la espalda?</span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">A mi papá <input class="blk" id="e3_3" data-answer="le" placeholder="___"> duele el pecho.</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">A nosotros <input class="blk" id="e3_4" data-answer="nos" placeholder="___"> duelen los pies.</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">A los pacientes <input class="blk" id="e3_5" data-answer="les" placeholder="___"> duele la cabeza.</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Sofía, ¿<input class="blk" id="e3_6" data-answer="te" placeholder="___"> duele el brazo? <span class="ex-hint">(a child · tú)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e3_1,e3_2,e3_3,e3_4,e3_5,e3_6','rs3')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e3_1,e3_2,e3_3,e3_4,e3_5,e3_6','rs3')">Reset</button>
+      <div class="res-msg" id="rs3" aria-live="polite"></div>
+    </div>
+
+    <!-- Ej 4 describing -->
+    <div class="card">
+      <div class="card-title">Ejercicio 4 · Describir el dolor <span class="pill">¿DÓNDE? ¿CÓMO?</span></div>
+      <div class="word-bank"><span class="word-bank-label">Word Bank</span><span class="word-bank-words"><span>agudo</span><span>sordo</span><span>punzante</span><span>ardor</span><span>derecho</span><span>izquierda</span></span></div>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Es un dolor <input class="blk" id="e4_1" data-answer="agudo" placeholder="___">. <span class="ex-hint">(sharp)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Es un dolor <input class="blk" id="e4_2" data-answer="sordo" placeholder="___">, no muy fuerte. <span class="ex-hint">(dull)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Siento un dolor <input class="blk" id="e4_3" data-answer="punzante" placeholder="___"> en el pecho. <span class="ex-hint">(stabbing)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Tengo <input class="blk" id="e4_4" data-answer="ardor" placeholder="___"> en el estómago. <span class="ex-hint">(burning)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Me duele el lado <input class="blk" id="e4_5" data-answer="derecho" placeholder="___">. <span class="ex-hint">(right)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Le duele la pierna <input class="blk" id="e4_6" data-answer="izquierda" placeholder="___">. <span class="ex-hint">(left)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e4_1,e4_2,e4_3,e4_4,e4_5,e4_6','rs4')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e4_1,e4_2,e4_3,e4_4,e4_5,e4_6','rs4')">Reset</button>
+      <div class="res-msg" id="rs4" aria-live="polite"></div>
+    </div>
+
+    <!-- Ej 5 asking -->
+    <div class="card">
+      <div class="card-title">Ejercicio 5 · Preguntas sobre el dolor <span class="pill">ENTREVISTA</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Complete the question so it fits the patient's answer.</p>
+      <div class="word-bank"><span class="word-bank-label">Word Bank</span><span class="word-bank-words"><span>dónde</span><span>desde</span><span>cómo</span><span>cuánto</span><span>qué</span><span>cuando</span></span></div>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">¿<input class="blk" id="e5_1" data-answer="dónde" placeholder="___"> le duele? <span class="ex-hint">Aquí, en la espalda.</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">¿<input class="blk" id="e5_2" data-answer="desde" placeholder="___"> cuándo? <span class="ex-hint">Desde ayer.</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">¿<input class="blk" id="e5_3" data-answer="cómo" placeholder="___"> es el dolor? <span class="ex-hint">Es agudo.</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Del 1 al 10, ¿<input class="blk" id="e5_4" data-answer="cuánto" placeholder="___"> le duele? <span class="ex-hint">Un siete.</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">¿<input class="blk" id="e5_5" data-answer="qué" placeholder="___"> pasó? <span class="ex-hint">Me caí en la calle.</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">¿Le duele <input class="blk" id="e5_6" data-answer="cuando" placeholder="___"> camina? <span class="ex-hint">Sí, mucho.</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e5_1,e5_2,e5_3,e5_4,e5_5,e5_6','rs5')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e5_1,e5_2,e5_3,e5_4,e5_5,e5_6','rs5')">Reset</button>
+      <div class="res-msg" id="rs5" aria-live="polite"></div>
+    </div>
+
+    <!-- Ej 6 listen -->
+    <div class="card">
+      <div class="card-title">Ejercicio 6 · Escuche al paciente <span class="pill">🔊 ¿DÓNDE? ¿CUÁNTO?</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Press 🔊 and listen. Write the <strong>body part</strong> in Spanish, or the <strong>number</strong> in digits. Listen as many times as you need.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Me duele mucho la rodilla.')">🔊 Escuchar</button> ¿Qué le duele? <input class="blk" id="e6_1" data-answer="la rodilla|rodilla" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('A mi hija le duelen los oídos.')">🔊 Escuchar</button> ¿Qué le duele a la niña? <input class="blk" id="e6_2" data-answer="los oídos|oídos|los oidos" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Me duele la espalda desde ayer.')">🔊 Escuchar</button> ¿Qué le duele? <input class="blk" id="e6_3" data-answer="la espalda|espalda" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Tengo un dolor agudo en el hombro derecho.')">🔊 Escuchar</button> ¿Dónde es el dolor? <input class="blk" id="e6_4" data-answer="el hombro|hombro|el hombro derecho|hombro derecho" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Del uno al diez, es un ocho.')">🔊 Escuchar</button> Intensidad del dolor (1 a 10): <input class="blk" id="e6_5" data-answer="8" data-digits="1" inputmode="numeric" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Me duele el estómago desde hace tres días.')">🔊 Escuchar</button> ¿Cuántos días? <input class="blk" id="e6_6" data-answer="3" data-digits="1" inputmode="numeric" placeholder="___"></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e6_1,e6_2,e6_3,e6_4,e6_5,e6_6','rs6')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e6_1,e6_2,e6_3,e6_4,e6_5,e6_6','rs6')">Reset</button>
+      <div class="res-msg" id="rs6" aria-live="polite"></div>
+    </div>
+
+    <!-- Ej 7 short answer -->
+    <div class="card">
+      <div class="card-title">Ejercicio 7 · Respuesta corta: ¿Dónde le duele? <span class="pill">SE CORRIGE SOLA</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Write a complete Spanish sentence for each situation. The page checks that you used the key words.</p>
+      <div id="shortCont"></div>
+      <button class="chk-btn" onclick="checkShort()">Check My Answers</button>
+      <button class="rst-btn" onclick="resetShort()">Reset</button>
+      <div class="res-msg" id="rs7" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ═══ JUEGOS ═══ -->
+  <section class="sec" id="sec-ju">
+    <h2 class="sec-title">Juegos · Play &amp; practice</h2>
+    <p class="sec-sub">matching · quiz · doler challenge</p>
+
+    <div class="card">
+      <div class="card-title">Juego 1 · Emparejamiento: El cuerpo <span class="pill">MATCHING</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Click a Spanish word, then its English meaning. Correct pairs turn green.</p>
+      <div id="matchCont"></div>
+      <button class="rst-btn" style="margin-left:0;" onclick="buildMatch()">Shuffle / Reset</button>
+      <div class="res-msg" id="rsMatch" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 2 · Opción múltiple: Capítulo 4 <span class="pill">QUIZ</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Ten questions on body parts, doler, pronouns, and describing and asking about pain. Pick the best answer, then score it.</p>
+      <div id="quizCont"></div>
+      <button class="chk-btn" onclick="checkQuiz()">Score My Quiz</button>
+      <button class="rst-btn" onclick="resetQuiz()">Reset</button>
+      <div class="res-msg" id="rsQuiz" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 3 · Reto: ¿me duele o me duelen? <span class="pill">12 ITEMS</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Choose the pronoun and the verb form that fit the person and the body part. Build your streak!</p>
+      <div class="game-wrap" id="gameWrap">
+        <div class="game-scorebar">
+          <div>Puntos<b id="gScore">0</b></div>
+          <div>Racha<b id="gStreak">0</b></div>
+          <div>Pregunta<b id="gNum">1/12</b></div>
+        </div>
+        <div class="game-prompt" id="gPrompt">—</div>
+        <div class="game-sub" id="gSub"></div>
+        <div class="game-opts" id="gOpts"></div>
+        <div class="game-feedback" id="gFb"></div>
+      </div>
+      <button class="rst-btn" style="margin-left:0;" onclick="startGame()">Restart Game</button>
+    </div>
+  </section>
+
+  <!-- ═══ POD · TRAUMA ═══ -->
+  <section class="sec" id="sec-pod">
+    <h2 class="sec-title">★ Pod de especialidad · Trauma</h2>
+    <p class="sec-sub">trauma · heridas, fracturas y golpes</p>
+
+    <div class="pod-hero">
+      <div class="label">Pod de especialidad · Semana 4</div>
+      <h2>En la sala de trauma</h2>
+      <p>A trauma patient arrives after a fall, a fight, or a road crash. The first minutes are about three things: what happened, where it hurts, and what must not move. <em>¿Qué pasó? ¿Dónde le duele? No mueva el cuello, por favor.</em> This pod uses this week's body vocabulary and <em>doler</em>, plus the emergency phrases from Capítulo 3.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Vocabulario de trauma <span class="pill">12 CARDS</span></div>
+      <div class="vocab-grid" id="fcTrauma"></div>
+    </div>
+
+    <div class="gbox alt">
+      <h3><span class="num">POD</span>Frases en la sala de trauma</h3>
+      <p class="sub">Short questions and clear commands.</p>
+      <table class="conj-table">
+        <thead><tr><th>Frase</th><th>English</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">¿Qué pasó?</td><td>What happened?</td></tr>
+          <tr><td class="accent">¿Dónde le duele?</td><td>Where does it hurt?</td></tr>
+          <tr><td class="accent">No mueva el cuello, por favor.</td><td>Don't move your neck, please.</td></tr>
+          <tr><td class="accent">¿Se golpeó la cabeza?</td><td>Did you hit your head?</td></tr>
+          <tr><td class="accent">¿Puede mover los dedos?</td><td>Can you move your fingers / toes?</td></tr>
+          <tr><td class="accent">Apriete mi mano.</td><td>Squeeze my hand.</td></tr>
+          <tr><td class="accent">Voy a ponerle una venda.</td><td>I'm going to put a bandage on you.</td></tr>
+          <tr><td class="accent">Vamos a tomar una radiografía.</td><td>We're going to take an X-ray.</td></tr>
+        </tbody>
+      </table>
+      <div class="ojo"><div class="ojo-title">¡OJO! · frases hechas en pasado</div><p><em>¿Se golpeó?</em> (did you hit yourself?), <em>Me caí</em> (I fell) and <em>¿Qué pasó?</em> are past tense. Learn them as fixed phrases for now. Also: <em>el hueso roto</em> is how many patients say it; <em>la fractura</em> is the clinical word. You'll hear both.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Diálogo · Un accidente en bicicleta <span class="pill">🔊 ESCUCHE</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:6px;">A 19-year-old cyclist arrives at the emergency room. Read along, then press play. Find every body part and every form of <em>doler</em>.</p>
+      <button class="chk-btn" style="margin-top:4px;" onclick="playDialogue()">🔊 Play dialogue</button>
+      <button class="rst-btn" onclick="stopSpeech()">■ Stop</button>
+      <div class="dlg" id="dlgBox"></div>
+    </div>
+
+    <div class="gbox alt2">
+      <h3><span class="num">INFORME</span>La evaluación rápida</h3>
+      <p class="sub">After the dialogue, the nurse writes this quick assessment. Read it aloud.</p>
+      <table class="conj-table">
+        <thead><tr><th>Dato</th><th>Se dice…</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">Edad: 19</td><td>El paciente tiene diecinueve años.</td></tr>
+          <tr><td class="accent">Brazo derecho: 8/10</td><td>Le duele el brazo derecho: un ocho de diez.</td></tr>
+          <tr><td class="accent">Cabeza</td><td>Tiene una herida en la cabeza. Se golpeó.</td></tr>
+          <tr><td class="accent">Dedos</td><td>Puede mover los dedos, pero le duele.</td></tr>
+          <tr><td class="accent">Plan</td><td>Posible fractura. Radiografía del brazo.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cult-card" style="background:linear-gradient(135deg,#9B2C2C 0%,#7A2020 100%);">
+      <div class="label">En Latinoamérica</div>
+      <h3>Los jóvenes y las calles</h3>
+      <p>Según la OPS, las lesiones de tránsito afectan especialmente a jóvenes de 15 a 29 años; peatones, ciclistas y motociclistas corren más riesgo. In a trauma room, that means many of your patients will be young people who were walking, biking, or riding a motorcycle. Useful questions: <em>¿Usa casco?</em> (Do you wear a helmet?) and <em>¿Iba a pie, en bicicleta o en moto?</em> (Were you on foot, on a bike, or on a motorcycle?).</p>
+      <div class="fact-pills">
+        <span>OPS = Organización Panamericana de la Salud</span>
+        <span>15 a 29 años</span>
+        <span>peatones · ciclistas · motociclistas</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Comprueba · Pod de trauma <span class="pill">5 PREGUNTAS</span></div>
+      <div id="podCont"></div>
+      <button class="chk-btn" onclick="checkPod()">Score the Pod</button>
+      <button class="rst-btn" onclick="resetPod()">Reset</button>
+      <div class="res-msg" id="rsPod" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ═══ REPASO · MIDTERM ═══ -->
+  <section class="sec" id="sec-rev">
+    <h2 class="sec-title">Repaso · Capítulos 1 a 4</h2>
+    <p class="sec-sub">midterm prep · Thursday's review</p>
+
+    <div class="ch-intro">
+      <div class="label">Preparación para el examen parcial · Midterm prep</div>
+      <h2>Four chapters, one patient visit</h2>
+      <p>Everything you've learned fits into one visit: you <strong>greet and register</strong> the patient (Cap. 1), give <strong>polite instructions</strong> (Cap. 2), react to an <strong>emergency</strong> and report numbers (Cap. 3), and ask <strong>where it hurts</strong> (Cap. 4). Use the checklist to find your weak spots, take the mixed review quiz, and practice the speaking prompts with a partner before Thursday.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">¿Qué necesito saber? · Checklist <span class="pill">CAPS. 1 A 4</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text"><strong>Capítulo 1 · Primeras palabras:</strong> alphabet and spelling names, greetings by time of day, subject pronouns, <em>ser</em>, <em>llamarse</em>, usted vs. tú, personal questions.</span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text"><strong>Capítulo 2 · Cortesía y mandatos:</strong> <em>por favor, con permiso, disculpe, lo siento</em>; usted commands (affirmative and negative), tú commands with children, ustedes with families.</span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text"><strong>Capítulo 3 · Emergencias:</strong> asking for and offering help, <em>hay / tiene / está / no puede</em>, urgent questions and commands, numbers 0 to 100, age with <em>tener</em>.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text"><strong>Capítulo 4 · El cuerpo:</strong> 20+ body parts with articles, <em>me duele / me duelen</em>, <em>me, te, le, nos, les</em>, describing and asking about pain.</span></div>
+      </div>
+    </div>
+
+    <div class="gbox alt2">
+      <h3><span class="num">REPASO</span>Errores frecuentes</h3>
+      <p class="sub">The mistakes that cost the most points. Check yourself.</p>
+      <table class="conj-table">
+        <thead><tr><th>✗ Incorrecto</th><th>✓ Correcto</th><th>Capítulo</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pn">Usted eres enfermera.</span></td><td class="accent">Usted es enfermera.</td><td>1</td></tr>
+          <tr><td><span class="pn">Soy una enfermera.</span></td><td class="accent">Soy enfermera.</td><td>1</td></tr>
+          <tr><td><span class="pn">Siéntase aquí. / Abre la boca (a un adulto).</span></td><td class="accent">Siéntese aquí. / Abra la boca.</td><td>2</td></tr>
+          <tr><td><span class="pn">Es 70 años. / Es inconsciente.</span></td><td class="accent">Tiene 70 años. / Está inconsciente.</td><td>3</td></tr>
+          <tr><td><span class="pn">Me duele mi cabeza. / Me duele los pies.</span></td><td class="accent">Me duele la cabeza. / Me duelen los pies.</td><td>4</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Repaso mixto · Mixed review quiz <span class="pill">12 PREGUNTAS</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Three questions from each chapter. Pick the best answer, then score it and read the explanations.</p>
+      <div id="revCont"></div>
+      <button class="chk-btn" onclick="checkRev()">Score the Review</button>
+      <button class="rst-btn" onclick="resetRev()">Reset</button>
+      <div class="res-msg" id="rsRev" aria-live="polite"></div>
+    </div>
+
+    <div class="gbox">
+      <h3><span class="num">ORAL</span>Práctica para el examen oral</h3>
+      <p class="sub">Practice with a partner. A plays the health worker, B plays the patient; then switch. Tap 🔊 to hear a model.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Buenos días, señora. Me llamo Ana y soy su enfermera. ¿Cómo se llama usted? ¿Cómo se escribe su apellido?')">🔊</button> Greet a new patient, introduce yourself, and ask her name and how to spell her last name.</span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Con permiso. Pase, por favor. Siéntese aquí y llene este formulario.')">🔊</button> Bring the patient into the exam room with 3 polite instructions.</span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('¿Dónde le duele? ¿Desde cuándo? ¿Cómo es el dolor? Del uno al diez, ¿cuánto le duele?')">🔊</button> Ask about the patient's pain: where, since when, what it's like, and how much.</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Necesito una ambulancia. Mi papá está en el piso y no puede respirar. Tiene setenta y seis años.')">🔊</button> You're a family member: call 911, describe the emergency, and give the patient's age.</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Mateo, abre la boca, por favor. ¿Te duele la garganta? Muy bien. No te muevas.')">🔊</button> Talk to a 7-year-old (tú): give 2 instructions and ask if something hurts.</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text"><button type="button" class="play-btn" onclick="speak('Muchas gracias, señora. Que se mejore. Cuídese.')">🔊</button> End the visit politely with a formal farewell.</span></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    SPSCC · Spanish for Healthcare Workers · Capítulo 4 · Talking about the Body
+  </div>
+
+</div>
+
+<script>
+/* ── Tabs ── */
+function switchTab(tab, el){
+  document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+  document.querySelectorAll('.sec').forEach(function(s){ s.classList.remove('active'); });
+  if(el){ el.classList.add('active'); el.setAttribute('aria-selected','true'); }
+  var s = document.getElementById('sec-'+tab); if(s) s.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ── Helpers ── */
+function normalize(s){ if(!s) return ''; return s.toString().trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[¿?¡!.,;:]/g,'').replace(/\s+/g,' ').trim(); }
+function wordsOf(str){ return normalize(str).split(/\s+/).filter(Boolean); }
+function val(id){ var el=document.getElementById(id); return el?(el.value||'').trim():''; }
+function setMsg(id, ok, text){ var m=document.getElementById(id); if(!m) return; m.textContent=text; m.className='res-msg '+(ok?'ok':'ng'); }
+function showFb(id, ok, msg){ var fb=document.getElementById(id); if(!fb) return; fb.className='task-fb show '+(ok?'ok':'ng'); fb.textContent=(ok?'✓ ':'✗ ')+msg; }
+function clearFb(id){ var fb=document.getElementById(id); if(fb) fb.className='task-fb'; }
+function answersOf(el){ return (el.getAttribute('data-answer')||'').split('|'); }
+function isRight(el){ if(el.getAttribute('data-digits')){ var d=(el.value||'').replace(/\D/g,''); return !!d && d===el.getAttribute('data-answer'); } var v=normalize(el.value); return !!v && answersOf(el).some(function(a){ return normalize(a)===v; }); }
+
+/* ── Speech (device Spanish voice) ── */
+var esVoice = null;
+function pickVoice(){
+  if(!('speechSynthesis' in window)) return;
+  var vs = window.speechSynthesis.getVoices(), pref = ['es-MX','es-US','es-419','es-CO','es-ES'];
+  for(var p=0;p<pref.length;p++){ for(var i=0;i<vs.length;i++){ if(vs[i].lang && vs[i].lang.replace('_','-')===pref[p]){ esVoice=vs[i]; return; } } }
+  for(var j=0;j<vs.length;j++){ if(vs[j].lang && vs[j].lang.toLowerCase().indexOf('es')===0){ esVoice=vs[j]; return; } }
+}
+if('speechSynthesis' in window){ pickVoice(); window.speechSynthesis.onvoiceschanged = pickVoice; }
+function utter(text, rate){
+  var u = new SpeechSynthesisUtterance(text.replace(/…/g,''));
+  u.lang = esVoice ? esVoice.lang : 'es-MX'; if(esVoice) u.voice = esVoice; u.rate = rate || 0.9;
+  return u;
+}
+function speak(texts){
+  try{
+    if(!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    (Array.isArray(texts)?texts:[texts]).forEach(function(t){ if(t) window.speechSynthesis.speak(utter(t)); });
+  }catch(e){}
+}
+function stopSpeech(){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+
+/* ── Flashcards ── */
+var vocabHead = [
+  {es:'la cabeza', note:'cabeza', en:'head', ex:'Me duele la cabeza.'},
+  {es:'la cara', note:'cabeza', en:'face', ex:'Tiene una herida en la cara.'},
+  {es:'los ojos', note:'cabeza · plural', en:'eyes', ex:'Me duelen los ojos.'},
+  {es:'los oídos', note:'por dentro · las orejas: por fuera', en:'ears (inner)', ex:'A la niña le duelen los oídos.'},
+  {es:'la nariz', note:'cabeza', en:'nose', ex:'Le sangra la nariz.'},
+  {es:'la boca', note:'cabeza', en:'mouth', ex:'Abra la boca, por favor.'},
+  {es:'la garganta', note:'cuello', en:'throat', ex:'Me duele la garganta cuando como.'},
+  {es:'el cuello', note:'cuello', en:'neck', ex:'No mueva el cuello, por favor.'},
+  {es:'el pecho', note:'tronco', en:'chest', ex:'Tengo dolor de pecho.'},
+  {es:'el estómago', note:'tronco · también: la barriga', en:'stomach', ex:'Le duele el estómago.'},
+  {es:'la espalda', note:'tronco', en:'back', ex:'Me duele la espalda, abajo.'},
+  {es:'el corazón', note:'órgano', en:'heart', ex:'Voy a escuchar el corazón.'}
+];
+var vocabLimbs = [
+  {es:'el hombro', note:'brazo', en:'shoulder', ex:'Me duele el hombro derecho.'},
+  {es:'el brazo', note:'brazo', en:'arm', ex:'Levante el brazo, por favor.'},
+  {es:'el codo', note:'brazo', en:'elbow', ex:'Se golpeó el codo.'},
+  {es:'la muñeca', note:'brazo', en:'wrist', ex:'Tiene la muñeca hinchada.'},
+  {es:'la mano', note:'femenino · ¡termina en -o!', en:'hand', ex:'Apriete mi mano.'},
+  {es:'los dedos', note:'mano · pie', en:'fingers / toes', ex:'¿Puede mover los dedos?'},
+  {es:'la cadera', note:'pierna', en:'hip', ex:'Mi abuela se cayó y le duele la cadera.'},
+  {es:'la pierna', note:'pierna', en:'leg', ex:'Le duele la pierna izquierda.'},
+  {es:'la rodilla', note:'pierna', en:'knee', ex:'Me duelen las rodillas.'},
+  {es:'el tobillo', note:'pierna', en:'ankle', ex:'Tiene el tobillo hinchado.'},
+  {es:'el pie', note:'pierna', en:'foot', ex:'Me duelen los pies.'},
+  {es:'la piel', note:'el cuerpo', en:'skin', ex:'Tiene una quemadura en la piel.'}
+];
+var vocabPain = [
+  {es:'Me duele…', note:'una cosa', en:'My … hurts', ex:'Me duele la cabeza.'},
+  {es:'Me duelen…', note:'dos o más cosas', en:'My … hurt', ex:'Me duelen los pies.'},
+  {es:'¿Le duele?', note:'a un paciente', en:'Does it hurt (you)?', ex:'¿Le duele aquí?'},
+  {es:'¿Dónde le duele?', note:'pregunta', en:'Where does it hurt?', ex:'Señora, ¿dónde le duele?'},
+  {es:'¿Desde cuándo?', note:'pregunta', en:'Since when?', ex:'¿Desde cuándo le duele?'},
+  {es:'desde ayer', note:'tiempo', en:'since yesterday', ex:'Me duele desde ayer.'},
+  {es:'desde hace dos días', note:'tiempo', en:'for two days', ex:'Le duele desde hace dos días.'},
+  {es:'Tengo dolor de…', note:'con tener', en:'I have a … ache', ex:'Tengo dolor de espalda.'},
+  {es:'un dolor agudo', note:'tipo', en:'a sharp pain', ex:'Es un dolor agudo.'},
+  {es:'un dolor sordo', note:'tipo', en:'a dull pain', ex:'Es un dolor sordo y constante.'},
+  {es:'el lado derecho', note:'ubicación', en:'the right side', ex:'Me duele el lado derecho.'},
+  {es:'Muéstreme dónde le duele', note:'mandato', en:'Show me where it hurts', ex:'Muéstreme dónde le duele, por favor.'}
+];
+var vocabTrauma = [
+  {es:'la herida', note:'trauma', en:'wound', ex:'Tiene una herida en la cabeza.'},
+  {es:'la fractura', note:'trauma · clínico', en:'fracture', ex:'Creo que es una fractura.'},
+  {es:'el hueso roto', note:'trauma · coloquial', en:'broken bone', ex:'¿Tengo un hueso roto?'},
+  {es:'la quemadura', note:'trauma', en:'burn', ex:'Tiene una quemadura en la mano.'},
+  {es:'el sangrado', note:'trauma', en:'bleeding', ex:'Hay mucho sangrado.'},
+  {es:'el golpe en la cabeza', note:'trauma', en:'blow to the head', ex:'¿Tiene un golpe en la cabeza?'},
+  {es:'la venda', note:'tratamiento', en:'bandage', ex:'Voy a ponerle una venda.'},
+  {es:'el yeso', note:'tratamiento', en:'cast', ex:'Va a necesitar un yeso.'},
+  {es:'la radiografía', note:'prueba', en:'X-ray', ex:'Vamos a tomar una radiografía.'},
+  {es:'el moretón', note:'trauma', en:'bruise', ex:'Tiene un moretón en el brazo.'},
+  {es:'hinchado / hinchada', note:'adjetivo', en:'swollen', ex:'El tobillo está hinchado.'},
+  {es:'el casco', note:'prevención', en:'helmet', ex:'¿Usa casco en la bicicleta?'}
+];
+var bodyPoints = [
+  {n:1, es:'la cabeza', en:'head', x:150, y:30},
+  {n:2, es:'los ojos', en:'eyes', x:136, y:58},
+  {n:3, es:'la boca', en:'mouth', x:150, y:80},
+  {n:4, es:'el cuello', en:'neck', x:150, y:108},
+  {n:5, es:'el hombro', en:'shoulder', x:106, y:128},
+  {n:6, es:'el pecho', en:'chest', x:150, y:152},
+  {n:7, es:'el brazo', en:'arm', x:86, y:180},
+  {n:8, es:'el codo', en:'elbow', x:213, y:212},
+  {n:9, es:'el estómago', en:'stomach', x:150, y:215},
+  {n:10, es:'la muñeca', en:'wrist', x:68, y:285},
+  {n:11, es:'la mano', en:'hand', x:233, y:314},
+  {n:12, es:'la cadera', en:'hip', x:186, y:262},
+  {n:13, es:'la pierna', en:'leg', x:125, y:335},
+  {n:14, es:'la rodilla', en:'knee', x:178, y:392},
+  {n:15, es:'el tobillo', en:'ankle', x:118, y:476},
+  {n:16, es:'el pie', en:'foot', x:192, y:502}
+];
+function buildBodyMap(){
+  var c = document.getElementById('bodyMap'); if(!c) return;
+  var shapes = '<circle class="bp" cx="150" cy="58" r="38"/>' +
+    '<rect class="bp" x="137" y="94" width="26" height="26" rx="6"/>' +
+    '<rect class="bp" x="100" y="114" width="100" height="160" rx="26"/>' +
+    '<polyline class="bp" points="106,128 82,212 66,296" fill="none" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:26;stroke:#E9DCC4"/>' +
+    '<polyline class="bp" points="194,128 218,212 234,296" fill="none" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:26;stroke:#E9DCC4"/>' +
+    '<circle class="bp" cx="62" cy="314" r="15"/><circle class="bp" cx="238" cy="314" r="15"/>' +
+    '<polyline points="128,262 123,390 119,488" fill="none" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:32;stroke:#E9DCC4"/>' +
+    '<polyline points="172,262 177,390 181,488" fill="none" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:32;stroke:#E9DCC4"/>' +
+    '<ellipse class="bp" cx="112" cy="504" rx="20" ry="10"/><ellipse class="bp" cx="188" cy="504" rx="20" ry="10"/>' +
+    '<text x="34" y="60" style="font-size:10px;fill:#8a7a60;font-family:Space Mono,monospace">derecho</text>' +
+    '<text x="222" y="60" style="font-size:10px;fill:#8a7a60;font-family:Space Mono,monospace">izquierdo</text>';
+  var dots = bodyPoints.map(function(p){
+    return '<g class="hs" tabindex="0" role="button" aria-label="'+p.n+': '+p.es+'" data-n="'+p.n+'"><circle cx="'+p.x+'" cy="'+p.y+'" r="10"/><text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle">'+p.n+'</text></g>';
+  }).join('');
+  c.innerHTML = '<svg viewBox="0 0 300 525" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa del cuerpo">'+shapes+dots+'</svg>';
+  c.querySelectorAll('.hs').forEach(function(g){
+    function show(){
+      var p = bodyPoints[+g.getAttribute('data-n')-1];
+      c.querySelectorAll('.hs').forEach(function(o){ o.classList.remove('on'); }); g.classList.add('on');
+      document.getElementById('bodyLabel').innerHTML = '<span class="bl-num">NÚMERO '+p.n+'</span><span class="bl-word">'+p.es+'</span><span class="bl-en">'+p.en+'</span>';
+      speak(p.es);
+    }
+    g.addEventListener('click', show);
+    g.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); show(); } });
+  });
+}
+function buildFlash(list, containerId, extraClass){
+  var c = document.getElementById(containerId);
+  list.forEach(function(v){
+    var card = document.createElement('div');
+    card.className = 'vocab-card' + (extraClass ? ' '+extraClass : '');
+    card.setAttribute('role','button');
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-label', v.es + '. Flip to see the translation and hear the pronunciation.');
+    card.innerHTML = '<div class="vocab-card-inner"><div class="vocab-front">'+v.es+'<small>'+v.note+'</small><span class="vocab-sound" aria-hidden="true">🔊</span>' +
+      '</div><div class="vocab-back">'+v.en + (v.ex ? '<span class="vocab-ex">'+v.ex+'</span>' : '') +
+      '<button type="button" class="vocab-replay" aria-label="Play again: ' + v.es.replace(/"/g,'&quot;') + '">🔊</button></div></div>';
+    function flip(){ var nowFlipped = card.classList.toggle('flipped'); if(nowFlipped) speak([v.es, v.ex]); }
+    card.addEventListener('click', flip);
+    card.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); flip(); } });
+    card.querySelector('.vocab-replay').addEventListener('click', function(e){ e.stopPropagation(); speak([v.es, v.ex]); });
+    c.appendChild(card);
+  });
+}
+
+/* ── Trauma dialogue ── */
+var dialogue = [
+  ['Enfermera','Hola, me llamo Rosa. Soy enfermera. ¿Qué pasó?','Hi, my name is Rosa. I\'m a nurse. What happened?'],
+  ['Paciente','Fue un accidente en mi bicicleta.','It was an accident on my bike.'],
+  ['Enfermera','¿Dónde le duele?','Where does it hurt?'],
+  ['Paciente','Me duele mucho el brazo derecho. Y me duele la cabeza.','My right arm hurts a lot. And my head hurts.'],
+  ['Enfermera','¿Se golpeó la cabeza?','Did you hit your head?'],
+  ['Paciente','Sí, un poco. Tengo una herida aquí.','Yes, a little. I have a wound here.'],
+  ['Enfermera','No mueva el cuello, por favor. ¿Cuántos años tiene?','Don\'t move your neck, please. How old are you?'],
+  ['Paciente','Tengo diecinueve años.','I\'m nineteen.'],
+  ['Enfermera','Del uno al diez, ¿cuánto le duele el brazo?','From one to ten, how much does your arm hurt?'],
+  ['Paciente','Un ocho. Es un dolor muy fuerte.','An eight. It\'s a very strong pain.'],
+  ['Enfermera','¿Puede mover los dedos?','Can you move your fingers?'],
+  ['Paciente','Sí, pero me duele.','Yes, but it hurts.'],
+  ['Enfermera','Puede ser una fractura. Vamos a tomar una radiografía. Voy a ponerle una venda en la herida.','It could be a fracture. We\'re going to take an X-ray. I\'m going to put a bandage on the wound.'],
+  ['Paciente','Gracias.','Thank you.'],
+  ['Enfermera','De nada. No se preocupe, estoy aquí para ayudarle.','You\'re welcome. Don\'t worry, I\'m here to help you.']
+];
+function buildDialogue(){
+  document.getElementById('dlgBox').innerHTML = dialogue.map(function(l){
+    return '<p><span class="who'+(l[0]==='Paciente'?' pt':'')+'">'+l[0]+'</span>'+l[1]+'<span class="en">'+l[2]+'</span></p>';
+  }).join('');
+}
+function playDialogue(){ speak(dialogue.map(function(l){ return l[1]; })); }
+
+/* ── Fill-in blanks ── */
+function checkBlanks(idsCSV, resultId){
+  var ids = idsCSV.split(','), correct = 0, total = ids.length;
+  ids.forEach(function(id){
+    var el = document.getElementById(id); if(!el) return;
+    el.classList.remove('ok','ng');
+    if(isRight(el)){ el.classList.add('ok'); correct++; } else el.classList.add('ng');
+  });
+  var msg = document.getElementById(resultId);
+  if(msg){
+    if(correct===total){ msg.textContent='¡Perfecto! '+correct+' / '+total+' correctas. ✓'; msg.className='res-msg ok'; }
+    else { msg.textContent=correct+' / '+total+' correctas. Revisa las marcadas en rojo.'; msg.className='res-msg ng'; }
+  }
+  updateCompletion();
+}
+function resetBlanks(idsCSV, resultId){
+  idsCSV.split(',').forEach(function(id){ var el=document.getElementById(id); if(el){ el.value=''; el.classList.remove('ok','ng'); } });
+  var msg=document.getElementById(resultId); if(msg){ msg.textContent=''; msg.className='res-msg'; }
+  updateCompletion();
+}
+
+/* ── Multiple-choice engine ── */
+var quizState = {}, MC_SETS = {};
+function buildMC(data, key, containerId){
+  var container = document.getElementById(containerId); if(!container) return;
+  container.innerHTML = '';
+  quizState[key] = data.map(function(){ return null; }); MC_SETS[key] = data;
+  data.forEach(function(item, i){
+    var div = document.createElement('div');
+    div.className = 'quiz-item'; div.id = key+'_item_'+i;
+    var opts = item.options.map(function(opt, j){
+      return '<button type="button" class="quiz-opt" id="'+key+'_'+i+'_'+j+'" onclick="pickMC(\''+key+'\','+i+','+j+')"><span class="letter">'+'ABCD'[j]+'</span><span>'+opt+'</span></button>';
+    }).join('');
+    div.innerHTML = '<div class="quiz-q"><span class="qnum">'+(i+1)+'.</span>'+item.q+'</div><div class="quiz-gloss">'+item.gloss+'</div><div class="quiz-options">'+opts+'</div><div class="quiz-explain" id="'+key+'_exp_'+i+'"></div>';
+    container.appendChild(div);
+  });
+}
+function pickMC(key, i, j){
+  quizState[key][i] = j;
+  MC_SETS[key][i].options.forEach(function(_, k){ document.getElementById(key+'_'+i+'_'+k).classList.toggle('selected', k===j); });
+  updateCompletion();
+}
+function revealMC(key, i){
+  var item = MC_SETS[key][i], chosen = quizState[key][i], ok = chosen===item.answer;
+  item.options.forEach(function(_, j){ var btn=document.getElementById(key+'_'+i+'_'+j); btn.classList.remove('is-correct','is-wrong'); if(j===item.answer) btn.classList.add('is-correct'); else if(j===chosen) btn.classList.add('is-wrong'); });
+  var exp = document.getElementById(key+'_exp_'+i); exp.className='quiz-explain show';
+  exp.innerHTML = '<strong>'+(ok?'✓ ¡Correcto!':'✗ No exactamente.')+'</strong> '+item.explain;
+  document.getElementById(key+'_item_'+i).className='quiz-item '+(ok?'correct':'wrong');
+  return ok;
+}
+function resetMC(key){
+  var data = MC_SETS[key]; quizState[key] = data.map(function(){ return null; });
+  data.forEach(function(item, i){ item.options.forEach(function(_, j){ document.getElementById(key+'_'+i+'_'+j).className='quiz-opt'; }); document.getElementById(key+'_exp_'+i).className='quiz-explain'; document.getElementById(key+'_item_'+i).className='quiz-item'; });
+}
+
+var quizData = [
+  { q:'«La rodilla» es…', gloss:'el cuerpo', options:['the elbow','the knee','the ankle','the wrist'], answer:1, explain:'<strong>La rodilla</strong> = knee. Elbow = <em>el codo</em>, ankle = <em>el tobillo</em>.' },
+  { q:'Me <u>___</u> los pies.', gloss:'doler', options:['duele','duelo','duelen','dolor'], answer:2, explain:'<em>Los pies</em> is plural: <strong>me duelen</strong>.' },
+  { q:'A mi papá <u>___</u> duele el pecho.', gloss:'pronombres', options:['me','te','le','les'], answer:2, explain:'One third person (él) → <strong>le</strong>: <em>A mi papá le duele el pecho.</em>' },
+  { q:'¿Cuál es correcto?', gloss:'el artículo', options:['Me duele mi cabeza.','Me duele la cabeza.','Yo duelo la cabeza.','Me duelen la cabeza.'], answer:1, explain:'Use the article with body parts and agree with one head: <strong>Me duele la cabeza.</strong>' },
+  { q:'Una paciente adulta. Usted pregunta:', gloss:'registro', options:['¿Dónde te duele?','¿Dónde me duele?','¿Dónde le duele?','¿Dónde les duele?'], answer:2, explain:'Usted takes <strong>le</strong>: <em>¿Dónde le duele?</em>' },
+  { q:'«Es un dolor agudo» significa…', gloss:'tipo de dolor', options:['It\'s a sharp pain.','It\'s a dull pain.','It\'s a burning pain.','It\'s a mild pain.'], answer:0, explain:'<em>Agudo</em> = sharp. <em>Sordo</em> = dull. <em>Ardor</em> = burning.' },
+  { q:'El paciente responde «Desde ayer». ¿Cuál fue la pregunta?', gloss:'preguntas', options:['¿Dónde le duele?','¿Cómo es el dolor?','¿Cuánto le duele?','¿Desde cuándo?'], answer:3, explain:'<strong>¿Desde cuándo?</strong> asks since when.' },
+  { q:'«La mano» es…', gloss:'género', options:['masculino','femenino'], answer:1, explain:'<em>La mano</em> is feminine even though it ends in -o.' },
+  { q:'Tengo dolor de <u>___</u>.', gloss:'tener dolor de', options:['la espalda','espalda','mi espalda','espaldas'], answer:1, explain:'After <em>dolor de</em>, no article: <strong>Tengo dolor de espalda.</strong>' },
+  { q:'«Muéstreme dónde le duele» significa…', gloss:'mandato', options:['Tell me why it hurts.','Show me where it hurts.','Does it hurt here?','Point to your head.'], answer:1, explain:'<em>Mostrar</em> → <strong>muestre</strong> + <em>me</em>: show me.' }
+];
+function checkQuiz(){
+  var correct = 0; quizData.forEach(function(_, i){ if(revealMC('quiz', i)) correct++; });
+  setMsg('rsQuiz', correct===quizData.length, correct+' / '+quizData.length+' correctas.'+(correct===quizData.length?' ¡Perfecto! ✓':' Lee cada explicación.'));
+  updateCompletion();
+}
+function resetQuiz(){ resetMC('quiz'); document.getElementById('rsQuiz').className='res-msg'; document.getElementById('rsQuiz').textContent=''; updateCompletion(); }
+
+var podData = [
+  { q:'«La venda» es…', gloss:'vocabulario de trauma', options:['the cast','the bandage','the X-ray','the bruise'], answer:1, explain:'<em>La venda</em> = bandage. Cast = <em>el yeso</em>.' },
+  { q:'Un paciente dice «Creo que tengo un hueso roto». Clínicamente, es…', gloss:'vocabulario de trauma', options:['una quemadura','una herida','una fractura','un sangrado'], answer:2, explain:'<em>El hueso roto</em> (everyday) = <strong>la fractura</strong> (clinical).' },
+  { q:'Posible lesión de la columna. Usted dice:', gloss:'frases', options:['Mueva el cuello, por favor.','No mueva el cuello, por favor.','Levántese, por favor.','Camine, por favor.'], answer:1, explain:'<strong>No mueva el cuello, por favor.</strong>' },
+  { q:'En el diálogo, ¿qué le duele al ciclista?', gloss:'diálogo', options:['La pierna y la espalda','El brazo derecho y la cabeza','El pecho y el estómago','El tobillo y el pie'], answer:1, explain:'<em>Me duele mucho el brazo derecho. Y me duele la cabeza.</em>' },
+  { q:'Según la OPS, las lesiones de tránsito afectan especialmente a…', gloss:'en Latinoamérica', options:['niños de 5 a 10 años','adultos de 60 a 80 años','jóvenes de 15 a 29 años','solo a conductores de camiones'], answer:2, explain:'<strong>Jóvenes de 15 a 29 años</strong>; peatones, ciclistas y motociclistas corren más riesgo.' }
+];
+function checkPod(){
+  var correct = 0; podData.forEach(function(_, i){ if(revealMC('pod', i)) correct++; });
+  setMsg('rsPod', correct===podData.length, correct+' / '+podData.length+' correctas.'+(correct===podData.length?' ¡Excelente! ✓':' Lee cada explicación.'));
+  updateCompletion();
+}
+function resetPod(){ resetMC('pod'); document.getElementById('rsPod').className='res-msg'; document.getElementById('rsPod').textContent=''; updateCompletion(); }
+
+var revData = [
+  { q:'Cap. 1 · Usted conoce a una paciente de 70 años. Usted pregunta:', gloss:'usted vs. tú', options:['¿Cómo te llamas?','¿Cómo se llama usted?','¿Cómo me llamo?','¿Cómo se llaman?'], answer:1, explain:'A new adult patient → usted: <strong>¿Cómo se llama usted?</strong>' },
+  { q:'Cap. 1 · Usted <u>___</u> la señora Gómez, ¿verdad?', gloss:'ser', options:['eres','soy','es','son'], answer:2, explain:'Usted takes the él/ella form: <strong>usted es</strong>.' },
+  { q:'Cap. 1 · Son las 8:00 p.m. Usted saluda con…', gloss:'saludos', options:['Buenos días','Buenas tardes','Buenas noches','Hasta mañana'], answer:2, explain:'After dark: <strong>Buenas noches</strong>.' },
+  { q:'Cap. 2 · Usted entra al cuarto de un paciente y dice…', gloss:'cortesía', options:['Con permiso.','Lo siento.','De nada.','Cuídate.'], answer:0, explain:'<strong>Con permiso</strong> before entering or touching.' },
+  { q:'Cap. 2 · El mandato formal de «sentarse» es…', gloss:'mandatos', options:['Siéntate','Siéntase','Siéntese','Se siente'], answer:2, explain:'Affirmative usted: <strong>Siéntese</strong>. Negative: <em>No se siente</em>.' },
+  { q:'Cap. 2 · A un niño de 6 años: «___ la boca, por favor.»', gloss:'tú', options:['Abra','Abre','Abran','Abro'], answer:1, explain:'Child → tú: <strong>Abre</strong> la boca.' },
+  { q:'Cap. 3 · Mi esposo <u>___</u> inconsciente.', gloss:'describir', options:['tiene','hay','es','está'], answer:3, explain:'A condition → <strong>está</strong> inconsciente.' },
+  { q:'Cap. 3 · El paciente <u>___</u> setenta años.', gloss:'edad', options:['es','tiene','está','hay'], answer:1, explain:'Age uses <strong>tener</strong>.' },
+  { q:'Cap. 3 · ¿Cuál número es «sesenta»?', gloss:'números', options:['16','60','70','6'], answer:1, explain:'<strong>Sesenta</strong> = 60. Setenta = 70.' },
+  { q:'Cap. 4 · A la niña <u>___</u> duelen los oídos.', gloss:'doler', options:['le','me','les','te'], answer:0, explain:'One third person → <strong>le</strong>; the verb is plural because of <em>los oídos</em>.' },
+  { q:'Cap. 4 · «Me duele el lado derecho» significa…', gloss:'ubicación', options:['My left side hurts.','My right side hurts.','My back hurts a lot.','It hurts on and off.'], answer:1, explain:'<em>Derecho</em> = right. <em>Izquierdo</em> = left.' },
+  { q:'Cap. 4 · Para preguntar la intensidad, usted dice…', gloss:'preguntar', options:['¿Desde cuándo?','¿Dónde le duele?','Del 1 al 10, ¿cuánto le duele?','¿Qué pasó?'], answer:2, explain:'<strong>Del 1 al 10, ¿cuánto le duele?</strong>' }
+];
+function checkRev(){
+  var correct = 0; revData.forEach(function(_, i){ if(revealMC('rev', i)) correct++; });
+  setMsg('rsRev', correct===revData.length, correct+' / '+revData.length+' correctas.'+(correct===revData.length?' ¡Listo para el examen! ✓':' Repase los capítulos de las preguntas incorrectas.'));
+  updateCompletion();
+}
+function resetRev(){ resetMC('rev'); document.getElementById('rsRev').className='res-msg'; document.getElementById('rsRev').textContent=''; updateCompletion(); }
+
+/* ── Matching game ── */
+var matchData = [
+  {es:'la cabeza', en:'head'},
+  {es:'el pecho', en:'chest'},
+  {es:'el estómago', en:'stomach'},
+  {es:'la espalda', en:'back'},
+  {es:'el hombro', en:'shoulder'},
+  {es:'el codo', en:'elbow'},
+  {es:'la muñeca', en:'wrist'},
+  {es:'la rodilla', en:'knee'},
+  {es:'el tobillo', en:'ankle'},
+  {es:'la garganta', en:'throat'}
+];
+var mSelEs = null, mSelEn = null, mMatched = 0, matchDone = false;
+function buildMatch(){
+  var c = document.getElementById('matchCont');
+  var order = matchData.map(function(_, i){ return i; });
+  for(var k=order.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=order[k]; order[k]=order[r]; order[r]=t; }
+  var esHtml = matchData.map(function(m, i){ return '<div class="mi" id="mes-'+i+'" data-idx="'+i+'" onclick="selSpanish(this)">'+(i+1)+'. '+m.es+'</div>'; }).join('');
+  var enHtml = order.map(function(idx){ return '<div class="mi" id="men-'+idx+'" data-idx="'+idx+'" onclick="selEnglish(this)">'+matchData[idx].en+'</div>'; }).join('');
+  c.innerHTML = '<div class="match-cols"><div><div class="match-col-label">Español</div>'+esHtml+'</div><div><div class="match-col-label">English</div>'+enHtml+'</div></div>';
+  mSelEs=null; mSelEn=null; mMatched=0; matchDone=false;
+  document.getElementById('rsMatch').textContent=''; document.getElementById('rsMatch').className='res-msg';
+  updateCompletion();
+}
+function selSpanish(el){ if(el.classList.contains('done')) return; document.querySelectorAll('#matchCont .mi[id^=mes-]').forEach(function(i){ i.classList.remove('sel'); }); el.classList.add('sel'); mSelEs=el; tryMatch(); }
+function selEnglish(el){ if(el.classList.contains('done')) return; document.querySelectorAll('#matchCont .mi[id^=men-]').forEach(function(i){ i.classList.remove('sel','bad'); }); el.classList.add('sel'); mSelEn=el; tryMatch(); }
+function tryMatch(){
+  if(!mSelEs || !mSelEn) return;
+  if(mSelEs.dataset.idx === mSelEn.dataset.idx){
+    mSelEs.classList.remove('sel'); mSelEs.classList.add('done'); mSelEn.classList.remove('sel'); mSelEn.classList.add('done'); mMatched++;
+    if(mMatched===matchData.length){ matchDone=true; setMsg('rsMatch', true, '¡Excelente! Emparejaste las '+mMatched+' frases. ✓'); }
+  } else { var bad=mSelEn; bad.classList.add('bad'); setTimeout(function(){ bad.classList.remove('bad','sel'); }, 700); }
+  mSelEs=null; mSelEn=null; updateCompletion();
+}
+
+/* ── Short answer ── */
+var shortData = [
+  { q:'Dígale al médico que le duele la cabeza.', gloss:'Tell the doctor your head hurts.', all:['me','duele','cabeza'], minW:4, hint:'Usa «Me duele la cabeza».' },
+  { q:'Pregúntele a un paciente adulto dónde le duele.', gloss:'Ask an adult patient where it hurts.', all:['donde','le','duele'], minW:3, hint:'Usa «¿Dónde le duele?» (usted → le).' },
+  { q:'Pregúntele desde cuándo tiene el dolor.', gloss:'Ask since when he has had the pain.', all:['desde','cuando'], minW:2, hint:'Usa «¿Desde cuándo…?».' },
+  { q:'Diga que a su mamá le duelen las rodillas.', gloss:"Say that your mom's knees hurt.", all:['le','duelen','rodillas'], minW:5, hint:'Usa «A mi mamá le duelen las rodillas» (plural → duelen).' },
+  { q:'Describa su dolor: es agudo y, del 1 al 10, es un siete.', gloss:'Describe your pain: sharp, a 7 out of 10.', all:['agudo'], any:['siete','7'], minW:4, hint:'Usa «Es un dolor agudo. Es un siete».' }
+];
+function buildShort(){
+  var c = document.getElementById('shortCont');
+  c.innerHTML = shortData.map(function(s, i){
+    return '<div style="margin-bottom:14px;"><div style="font-size:0.92rem;font-weight:700;color:var(--navy);">'+(i+1)+'. '+s.q+' <span style="font-weight:400;color:var(--text-hint);font-style:italic;font-size:0.82rem;">'+s.gloss+'</span></div><input class="task-input" id="sa'+i+'" placeholder="Escribe tu respuesta…" autocomplete="off"><div class="task-fb" id="fbsa'+i+'"></div></div>';
+  }).join('');
+}
+function gradeShort(i){
+  var s = shortData[i], v = val('sa'+i), w = wordsOf(v);
+  if(!v) return { ok:false, msg:'Escribe tu respuesta.' };
+  if(w.length < s.minW) return { ok:false, msg:'Escribe una oración completa (mínimo '+s.minW+' palabras).' };
+  var has = function(k){ return w.indexOf(normalize(k)) !== -1; };
+  if(s.all && !s.all.every(has)) return { ok:false, msg:s.hint };
+  if(s.any && !s.any.some(has)) return { ok:false, msg:s.hint };
+  return { ok:true, msg:'¡Bien! Oración completa.' };
+}
+function checkShort(){
+  var correct = 0;
+  shortData.forEach(function(_, i){ var r=gradeShort(i); document.getElementById('sa'+i).style.borderBottomColor = r.ok?'var(--sage)':'var(--terracotta)'; showFb('fbsa'+i, r.ok, r.msg); if(r.ok) correct++; });
+  setMsg('rs7', correct===shortData.length, correct+' / '+shortData.length+' respuestas válidas.');
+  updateCompletion();
+}
+function resetShort(){
+  shortData.forEach(function(_, i){ var el=document.getElementById('sa'+i); el.value=''; el.style.borderBottomColor=''; clearFb('fbsa'+i); });
+  document.getElementById('rs7').className='res-msg'; document.getElementById('rs7').textContent=''; updateCompletion();
+}
+
+/* ── Doler challenge ── */
+var gameData = [
+  {n:'a mí + la cabeza', a:'me duele', o:['me duele','me duelen','le duele']},
+  {n:'a mí + los pies', a:'me duelen', o:['me duele','me duelen','te duelen']},
+  {n:'a usted + la espalda', a:'le duele', o:['te duele','le duele','le duelen']},
+  {n:'a usted + los oídos', a:'le duelen', o:['le duelen','le duele','les duelen']},
+  {n:'a ti + la garganta', a:'te duele', o:['te duele','le duele','me duele']},
+  {n:'a mi papá + el pecho', a:'le duele', o:['me duele','le duele','les duele']},
+  {n:'a nosotros + los ojos', a:'nos duelen', o:['nos duele','les duelen','nos duelen']},
+  {n:'a los niños + el estómago', a:'les duele', o:['les duele','le duele','les duelen']},
+  {n:'a mi abuela + las rodillas', a:'le duelen', o:['le duele','le duelen','me duelen']},
+  {n:'a ti + las manos', a:'te duelen', o:['te duele','te duelen','le duelen']},
+  {n:'a ustedes + la cabeza', a:'les duele', o:['nos duele','les duele','les duelen']},
+  {n:'a mí + el brazo derecho', a:'me duele', o:['me duelen','me duele','mi duele']}
+];
+var gIdx=0, gScore=0, gStreak=0, gFinished=false, gLock=false;
+function startGame(){
+  gIdx=0; gScore=0; gStreak=0; gFinished=false; gLock=false;
+  document.getElementById('gScore').textContent='0'; document.getElementById('gStreak').textContent='0';
+  document.getElementById('gFb').textContent=''; document.getElementById('gFb').className='game-feedback';
+  showGameQ(); updateCompletion();
+}
+function showGameQ(){
+  var q = gameData[gIdx];
+  document.getElementById('gNum').textContent = (gIdx+1)+'/'+gameData.length;
+  document.getElementById('gPrompt').textContent = q.n;
+  document.getElementById('gSub').textContent = 'Choose the pronoun + doler form for this person and body part.';
+  var opts = q.o.slice();
+  for(var k=opts.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=opts[k]; opts[k]=opts[r]; opts[r]=t; }
+  document.getElementById('gOpts').innerHTML = opts.map(function(o){ return '<button type="button" class="game-opt" onclick="pickGame(this,\''+o.replace(/'/g,"\\'")+'\')">'+o+'</button>'; }).join('');
+  gLock=false;
+}
+function pickGame(el, choice){
+  if(gLock) return; gLock=true;
+  var q = gameData[gIdx], fb = document.getElementById('gFb');
+  var ok = choice === q.a;
+  document.querySelectorAll('#gOpts .game-opt').forEach(function(b){ if(b.textContent===q.a) b.classList.add('is-correct'); });
+  if(ok){ gScore++; gStreak++; fb.textContent='✓ ¡Correcto! '+q.a.charAt(0).toUpperCase()+q.a.slice(1)+'.'; fb.className='game-feedback ok'; speak(q.a); }
+  else { gStreak=0; el.classList.add('is-wrong'); fb.textContent='✗ Correct answer: '+q.a+'.'; fb.className='game-feedback ng'; }
+  document.getElementById('gScore').textContent=gScore; document.getElementById('gStreak').textContent=gStreak;
+  setTimeout(function(){
+    gIdx++;
+    if(gIdx < gameData.length){ showGameQ(); }
+    else { gFinished=true; document.getElementById('gPrompt').innerHTML='<span class="game-done">¡Fin! '+gScore+' / '+gameData.length+'</span>'; document.getElementById('gSub').textContent = gScore===gameData.length?'¡Perfecto! Dominas el verbo doler.':'Pulsa "Restart Game" para intentarlo de nuevo.'; document.getElementById('gOpts').innerHTML=''; document.getElementById('gNum').textContent=gameData.length+'/'+gameData.length; }
+    updateCompletion();
+  }, 950);
+}
+
+/* ── Completion meter ── */
+var BLANK_SETS = [['e1_',8],['e2_',6],['e3_',6],['e4_',6],['e5_',6],['e6_',6]];
+function idsFilled(prefix, n){ var out=[]; for(var i=1;i<=n;i++) out.push(val(prefix+i).length>0); return out; }
+var completionGroups = [
+  { label:'Nombre', tab:'ov', items:function(){ return [val('studentName').length>0]; } },
+  { label:'Ejercicios', tab:'ej', items:function(){
+      var a=[]; BLANK_SETS.forEach(function(b){ a=a.concat(idsFilled(b[0],b[1])); });
+      return a.concat(shortData.map(function(_, i){ return val('sa'+i).length>0; })); } },
+  { label:'Juegos', tab:'ju', items:function(){ return [matchDone].concat(quizData.map(function(_, i){ return quizState['quiz'][i]!==null; }), [gFinished]); } },
+  { label:'Pod', tab:'pod', items:function(){ return podData.map(function(_, i){ return quizState['pod'][i]!==null; }); } },
+  { label:'Repaso', tab:'rev', items:function(){ return revData.map(function(_, i){ return quizState['rev'][i]!==null; }); } }
+];
+function completionStats(){ return completionGroups.map(function(g){ var a=g.items(); return { label:g.label, tab:g.tab, done:a.filter(Boolean).length, total:a.length }; }); }
+
+/* ── Live score ── */
+function blanksCorrect(prefix, n){ var c=0; for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(el && isRight(el)) c++; } return c; }
+function computeScore(){
+  var correct=0, total=0;
+  BLANK_SETS.forEach(function(b){ correct+=blanksCorrect(b[0],b[1]); total+=b[1]; });
+  shortData.forEach(function(_, i){ if(val('sa'+i) && gradeShort(i).ok) correct++; }); total += shortData.length;
+  correct += mMatched; total += matchData.length;
+  quizData.forEach(function(it, i){ if(quizState['quiz'] && quizState['quiz'][i]===it.answer) correct++; }); total += quizData.length;
+  correct += gScore; total += gameData.length;
+  podData.forEach(function(it, i){ if(quizState['pod'] && quizState['pod'][i]===it.answer) correct++; }); total += podData.length;
+  revData.forEach(function(it, i){ if(quizState['rev'] && quizState['rev'][i]===it.answer) correct++; }); total += revData.length;
+  return { correct:correct, total:total };
+}
+function updateScore(){ var s=computeScore(); var pct=s.total?Math.round(s.correct/s.total*100):0; var el=document.getElementById('completionScore'); if(el) el.textContent='★ '+pct+'% correcto'; }
+
+function updateCompletion(){
+  if(!quizState['quiz'] || !quizState['pod'] || !quizState['rev']) return;
+  var stats = completionStats(), d=0, t=0;
+  stats.forEach(function(g){ d+=g.done; t+=g.total; });
+  var pct = t ? Math.round(d/t*100) : 0;
+  document.getElementById('completionPct').textContent = pct+'%';
+  document.getElementById('pf').style.width = pct+'%';
+  document.getElementById('completionLegend').innerHTML = stats.map(function(g){ return '<button type="button" class="legend-pill '+(g.done===g.total?'done':'')+'" onclick="jumpTab(\''+g.tab+'\')">'+g.label+' '+g.done+'/'+g.total+'</button>'; }).join('');
+  updateScore();
+}
+function jumpTab(tab){ var btns=document.querySelectorAll('.tab'); for(var i=0;i<btns.length;i++){ if((btns[i].getAttribute('onclick')||'').indexOf("'"+tab+"'")!==-1){ switchTab(tab, btns[i]); return; } } switchTab(tab, null); }
+document.addEventListener('input', updateCompletion);
+document.addEventListener('change', updateCompletion);
+
+/* ── Student report ── */
+function escapeHtml(str){ return (str==null?'':String(str)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function stripTags(html){ var dv=document.createElement('div'); dv.innerHTML=html||''; return (dv.textContent||'').replace(/\s+/g,' ').trim(); }
+function reportTable(title, scoreText, groups){
+  var blocks = groups.map(function(g){
+    var rows = g.items.map(function(it){ return '<tr class="'+(it.value?(it.ok?'ok':'bad'):'blank')+'"><td class="num">'+escapeHtml(it.label)+'</td><td>'+(it.value?escapeHtml(it.value):'<span class="blanktxt">(en blanco)</span>')+'</td><td class="note">'+escapeHtml(it.msg||'')+'</td><td class="mark">'+(it.value?(it.ok?'✓':'✗'):'—')+'</td></tr>'; }).join('');
+    return '<h3>'+escapeHtml(g.heading)+'</h3><table><tbody>'+rows+'</tbody></table>';
+  }).join('');
+  return '<h2>'+escapeHtml(title)+'<span class="score">'+escapeHtml(scoreText)+'</span></h2>'+blocks;
+}
+function collectBlanks(prefix, n, heading){
+  var items=[], correct=0;
+  for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(!el) continue; var v=(el.value||'').trim(); var ok=isRight(el); if(ok) correct++; items.push({ label:String(i), value:v, ok:ok, msg: ok?'Correcto.':'Respuesta: '+answersOf(el).join(' / ') }); }
+  return { heading:heading, items:items, correct:correct, total:items.length };
+}
+function mcReport(data, key){
+  return data.map(function(item, i){ var ch=quizState[key][i]; return { label:String(i+1), value: ch===null?'':stripTags(item.options[ch]), ok: ch===item.answer, msg: ch===item.answer?'Correcto.':'Correcta: '+stripTags(item.options[item.answer]) }; });
+}
+function buildReportHtml(name){
+  var stamp = new Date().toLocaleString('en-US',{ year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+  var heads = ['Ej 1 · Las partes del cuerpo','Ej 2 · ¿Duele o duelen?','Ej 3 · ¿A quién le duele?','Ej 4 · Describir el dolor','Ej 5 · Preguntas sobre el dolor','Ej 6 · Escuche al paciente'];
+  var blanks = BLANK_SETS.map(function(b, k){ return collectBlanks(b[0], b[1], heads[k]); });
+  var blankCorrect=0, blankTotal=0; blanks.forEach(function(g){ blankCorrect+=g.correct; blankTotal+=g.total; });
+  var saItems = shortData.map(function(s, i){ var v=val('sa'+i), r=gradeShort(i); return { label:s.q, value:v, ok:r.ok, msg:r.msg }; });
+  var saCorrect = saItems.filter(function(x){return x.ok;}).length;
+  var mcItems = mcReport(quizData, 'quiz'), mcCorrect = mcItems.filter(function(x){return x.ok;}).length;
+  var podItems = mcReport(podData, 'pod'), podCorrect = podItems.filter(function(x){return x.ok;}).length;
+  var revItems = mcReport(revData, 'rev'), revCorrect = revItems.filter(function(x){return x.ok;}).length;
+  var matchItem = [{ label:'Emparejamiento', value: matchDone?(matchData.length+' / '+matchData.length):(mMatched+' / '+matchData.length), ok: matchDone, msg: matchDone?'Completado.':'Sin terminar.' }];
+  var gameItem = [{ label:'Reto: doler', value: gFinished?(gScore+' / '+gameData.length):'', ok: gFinished && gScore>=10, msg: gFinished?(gScore>=10?'¡Bien dominado!':'Practica un poco más.'):'Sin terminar.' }];
+
+  var totalCorrect = blankCorrect + saCorrect + mcCorrect + mMatched + gScore + podCorrect + revCorrect;
+  var totalItems = blankTotal + saItems.length + mcItems.length + matchData.length + gameData.length + podItems.length + revItems.length;
+  var scorePct = totalItems ? Math.round(totalCorrect/totalItems*100) : 0;
+
+  var stats = completionStats(), cd=0, ct=0; stats.forEach(function(g){ cd+=g.done; ct+=g.total; });
+  var cpct = ct?Math.round(cd/ct*100):0;
+  var compRows = stats.map(function(g){ return '<li class="'+(g.done===g.total?'checked':'')+'">'+(g.done===g.total?'☑':'☐')+' '+escapeHtml(g.label)+': '+g.done+' / '+g.total+'</li>'; }).join('');
+
+  return '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Reporte Capítulo 4 · '+escapeHtml(name)+'</title><style>'+
+  "body{font-family:Georgia,'Times New Roman',serif;color:#2A2118;max-width:850px;margin:0 auto;padding:40px 32px;line-height:1.6;}"+
+  'header{border-bottom:4px solid #C45D3A;padding-bottom:16px;margin-bottom:28px;}'+
+  'h1{font-size:1.6rem;color:#1B2A4A;margin:0 0 6px;}'+
+  ".meta{font-family:'Courier New',monospace;font-size:0.78rem;color:#6B5D4A;} .meta strong{color:#1B2A4A;}"+
+  '.summary{background:#FBF5EA;border-left:5px solid #D4A24C;padding:14px 18px;margin-bottom:28px;font-size:0.95rem;}'+
+  'h2{font-size:1.1rem;color:#1B2A4A;margin:32px 0 10px;border-left:5px solid #C45D3A;padding-left:12px;}'+
+  "h3{font-size:0.78rem;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:0.06em;color:#6B5D4A;margin:18px 0 6px;font-weight:normal;}"+
+  ".score{font-family:'Courier New',monospace;font-size:0.72rem;font-weight:normal;color:#6B5D4A;display:block;padding-top:2px;}"+
+  'table{width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:8px;}'+
+  'td{padding:8px 10px;border-bottom:1px solid #EDE2CE;vertical-align:top;}'+
+  "td.num{color:#6B5D4A;font-family:'Courier New',monospace;font-size:0.75rem;white-space:nowrap;}"+
+  'td.note{font-size:0.78rem;color:#6B5D4A;font-style:italic;} td.mark{text-align:center;font-weight:bold;width:26px;}'+
+  'tr.ok{background:#F2F8EE;} tr.ok td.mark{color:#4C7A3C;} tr.bad{background:#FCF0EE;} tr.bad td.mark{color:#A8452A;}'+
+  '.blanktxt{color:#A89A88;} ul.check{list-style:none;padding:0;font-size:0.9rem;} ul.check li{padding:5px 0;border-bottom:1px solid #F2EADB;} ul.check li.checked{color:#4C7A3C;}'+
+  "footer{margin-top:40px;border-top:1px solid #EDE2CE;padding-top:12px;font-family:'Courier New',monospace;font-size:0.68rem;color:#6B5D4A;}"+
+  '@media print{body{padding:0;}h2{page-break-after:avoid;}table{page-break-inside:avoid;}}'+
+  '</style></head><body>'+
+  '<header><h1>Spanish for Healthcare Workers · Capítulo 4</h1><p class="meta"><strong>Estudiante:</strong> '+escapeHtml(name)+' &nbsp;·&nbsp; <strong>El cuerpo y el dolor</strong> &nbsp;·&nbsp; Generado: '+escapeHtml(stamp)+'</p></header>'+
+  '<div class="summary"><strong>Puntuación:</strong> '+totalCorrect+' / '+totalItems+' correctas (<strong>'+scorePct+'%</strong>) · Página completada al <strong>'+cpct+'%</strong> ('+cd+' / '+ct+' elementos)</div>'+
+  '<h2>Progreso por sección</h2><ul class="check">'+compRows+'</ul>'+
+  reportTable('Ejercicios 1 a 6 (fill-in)', blankCorrect+' / '+blankTotal+' correctas', blanks)+
+  reportTable('Ejercicio 7 · Respuesta corta', saCorrect+' / '+saItems.length+' válidas', [{ heading:'¿Dónde le duele?', items:saItems }])+
+  reportTable('Juegos', mcCorrect+' / '+mcItems.length+' en el quiz', [{ heading:'Juego 2 · Opción múltiple', items:mcItems }, { heading:'Juego 1 · Emparejamiento', items:matchItem }, { heading:'Juego 3 · Reto: doler', items:gameItem }])+
+  reportTable('★ Pod de especialidad · Trauma', podCorrect+' / '+podItems.length+' correctas', [{ heading:'Comprueba', items:podItems }])+
+  reportTable('Repaso · Capítulos 1 a 4', revCorrect+' / '+revItems.length+' correctas', [{ heading:'Repaso mixto', items:revItems }])+
+  '<footer>South Puget Sound Community College · Spanish for Healthcare Workers · Capítulo 4 · Para entregar como PDF, abre este archivo e imprime → Guardar como PDF.</footer></body></html>';
+}
+function downloadReport(){
+  var field=document.getElementById('studentName'), name=(field.value||'').trim();
+  if(!name){ field.focus(); field.style.borderColor='#A8452A'; alert('Escribe tu nombre primero. / Please enter your name before downloading the report.'); setTimeout(function(){ field.style.borderColor=''; },2500); return; }
+  var html=buildReportHtml(name); var safe=name.replace(/[^a-z0-9]+/gi,'_').replace(/^_+|_+$/g,'')||'estudiante';
+  var blob=new Blob([html],{type:'text/html;charset=utf-8'}); var url=URL.createObjectURL(blob);
+  var a=document.createElement('a'); a.href=url; a.download='Capitulo4_SpanishHealthcare_'+safe+'.html'; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); },1000);
+}
+
+/* ── Build everything ── */
+buildFlash(vocabHead, 'fcHead', '');
+buildFlash(vocabLimbs, 'fcLimbs', 'conn-card');
+buildFlash(vocabPain, 'fcPain', '');
+buildFlash(vocabTrauma, 'fcTrauma', 'pod-card');
+buildBodyMap();
+buildDialogue();
+buildMC(quizData, 'quiz', 'quizCont');
+buildMC(podData, 'pod', 'podCont');
+buildMC(revData, 'rev', 'revCont');
+buildMatch();
+buildShort();
+startGame();
+updateCompletion();
+</script>
+
+</body>
+</html>
